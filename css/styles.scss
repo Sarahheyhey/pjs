@@ -5,66 +5,47 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
+$lilla:  #6a2976;
+$lyslilla: #e9bcf1;
+$orange: #f99c33;
+$brun: #3e2516;
+$sort: #000000;
+$hvid: #ffffff;
+$graa: #666666;
+
 body {
   margin: 0; // Ingen kanter i siden af browser
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+@font-face {
+  font-family: 'Archer Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Archer Bold'), url('../fonts/Archer-Bold-Pro.woff') format('woff');
 }
 
-
 h1{
-  @font-face {
-    font-family: 'Archer Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
-    font-size: 30pt;
-  }
+  font-family: 'Archer Bold';
+  font-size: 24pt;
+  font-weight: normal;
+  text-align: center;
+  color: $brun;
 }
 
 h2{
-  @font-face {
-    font-family: 'Archer Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
-    font-size: 26pt;
-  }
+  font-family: 'Archer Bold';
+  font-size: 12pt;
+  font-weight: normal;
+  color: $lilla;
 }
 
-
-h4{
-  @font-face {
-      font-family: 'Archer Bold';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
-    font-size: 48pt;
-  }
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+  font-family: "Open Sans";
+  font-size: 10pt;
+  color: $graa;
 }
-
-
-h5{
-  @font-face {
-      font-family: 'Archer Bold';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
-    font-size: 36pt;
-  }
-}
-
-
-
-$lilla:  #6a2976; 
-$lyslilla: #e9bcf1;
-$orange: #f99c33;
-$sort: #000000;
-$hvid: #ffffff;
-
 
 a{
   text-decoration: none;
@@ -91,7 +72,7 @@ a{
   cursor: pointer;
   border: orange;
   text-decoration-color: $hvid;
-  with
+  with:
   height
   margin
   padding
@@ -109,13 +90,7 @@ li {
   margin: 0; // Ingen ydre margen fra listpunkter
 }
 
-p {
-  margin: 0; // Ingen ydre margen fra paragraffer
-  padding: 0; // Ingen indre margen fra paragraffer
-  font-family: "Open Sans";
-  font-size: 30pt;
 
-}
 
 // Sikrer billeder er responsive
 img {
@@ -130,6 +105,28 @@ img {
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  h1{
+    font-family: 'Archer Bold';
+    font-size: 46pt;
+    font-weight: normal;
+    text-align: center;
+    color: $brun;
+  }
+
+  h2{
+    font-family: 'Archer Bold';
+    font-size: 18pt;
+    font-weight: normal;
+    color: $lilla;
+  }
+
+  p{
+    margin: 0; // Ingen ydre margen fra paragraffer
+    padding: 0; // Ingen indre margen fra paragraffer
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
