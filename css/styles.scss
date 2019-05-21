@@ -47,20 +47,25 @@ p {
   color: $graa;
 }
 
+
+
+
+
 a{
   text-decoration: none;
+
 }
 
 @mixin buttionMobile{
-  background-color: orange;
+  background-color: $orange;
   text-align: center;
   cursor: pointer;
-  border: orange;
+  border: $orange;
   text-decoration-color: $hvid;
-  with:
-  height
-  margin
-  padding
+  width: 630px;
+  height: 470px;
+  margin: 20px;
+  padding: 20px;
 
 }
 
@@ -72,10 +77,7 @@ a{
   cursor: pointer;
   border: orange;
   text-decoration-color: $hvid;
-  with:
-  height
-  margin
-  padding
+
 }
 
 
@@ -88,6 +90,9 @@ ul, ol {
 
 li {
   margin: 0; // Ingen ydre margen fra listpunkter
+  list-style: none;
+  display: inline-block;
+
 }
 
 
@@ -101,6 +106,15 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+.aboutfaner{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
 }
 
 @media screen and (min-width: 992px) {

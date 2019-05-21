@@ -37,8 +37,6 @@
 
 <meta property="og:locale" content="da_DK" >
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
 
 </head>
 

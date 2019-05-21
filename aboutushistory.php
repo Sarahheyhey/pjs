@@ -37,15 +37,67 @@
 
 <meta property="og:locale" content="da_DK" >
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div class="aboutContainer">
 
+    <div class="aboutoverskrift">
+        <h1>
+            About Us
+        </h1>
+    </div>
+
+    <ul class="aboutfaner">
+
+        <li>
+
+            <a href="aboutushistory.php" target="_self"> <h2>History</h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutusbeans.php" target="_self"><h2>Beans</h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutuscareers.php" target="_self"><h2>Careers</h2> </a>
+        </li>
+
+
+    </ul>
+
+        <div class="aboutindhold">
+            <div class="about1">
+
+                <div class="about1overskrift">
+
+                    <h2>
+                        The Founder Of It All
+                    </h2>
+
+                </div>
+                <div class="about1text">
+
+                    <p>
+                        The“PJ” in our name stands for Phyllis Jordan, our founder who opened her first coffee house over three decades ago in New Orleans, USA.  She’s a pioneers of sustainable coffee – her idea was to create unique coffee blends and roast the beans in small batches – the same way we still do it today in our roasting facility in the US.
+
+                    </p>
+
+                </div>
+                <div class="about1billede">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
