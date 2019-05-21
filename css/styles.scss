@@ -13,9 +13,91 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
 }
+
+
 h1{
- 
+  @font-face {
+    font-family: 'Archer Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
+    font-size: 30pt;
+  }
 }
+
+h2{
+  @font-face {
+    font-family: 'Archer Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
+    font-size: 26pt;
+  }
+}
+
+
+h4{
+  @font-face {
+      font-family: 'Archer Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
+    font-size: 48pt;
+  }
+}
+
+
+h5{
+  @font-face {
+      font-family: 'Archer Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
+    font-size: 36pt;
+  }
+}
+
+
+
+$lilla:  #6a2976; 
+$lyslilla: #e9bcf1;
+$orange: #f99c33;
+$sort: #000000;
+$hvid: #ffffff;
+
+
+a{
+  text-decoration: none;
+}
+
+@mixin buttionMobile{
+  background-color: orange;
+  text-align: center;
+  cursor: pointer;
+  border: orange;
+  text-decoration-color: $hvid;
+  with:
+  height
+  margin
+  padding
+
+}
+
+
+
+@mixin buttonWeb{
+  background-color: orange;
+  text-align: center;
+  cursor: pointer;
+  border: orange;
+  text-decoration-color: $hvid;
+  with
+  height
+  margin
+  padding
+}
+
+
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -30,6 +112,9 @@ li {
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
+  font-family: "Open Sans";
+  font-size: 30pt;
+
 }
 
 // Sikrer billeder er responsive
