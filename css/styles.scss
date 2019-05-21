@@ -23,6 +23,8 @@ h1{
     src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
     font-size: 30pt;
   }
+  text-align: center;
+  text-decoration-color: #6a2976;
 }
 
 h2{
@@ -33,6 +35,8 @@ h2{
     src: local('Archer Bold'), url('Archer-Bold-Pro.woff') format('woff');
     font-size: 26pt;
   }
+  text-align: center;
+  text-decoration-color: #6a2976;
 }
 
 
@@ -68,21 +72,21 @@ $hvid: #ffffff;
 
 a{
   text-decoration: none;
+
 }
 
 @mixin buttionMobile{
-  background-color: orange;
+  background-color: $orange;
   text-align: center;
   cursor: pointer;
-  border: orange;
+  border: $orange;
   text-decoration-color: $hvid;
-  with:
-  height
-  margin
-  padding
+  width: 630px;
+  height: 470px;
+  margin: 20px;
+  padding: 20px;
 
 }
-
 
 
 @mixin buttonWeb{
@@ -91,10 +95,7 @@ a{
   cursor: pointer;
   border: orange;
   text-decoration-color: $hvid;
-  with
-  height
-  margin
-  padding
+
 }
 
 
@@ -107,13 +108,16 @@ ul, ol {
 
 li {
   margin: 0; // Ingen ydre margen fra listpunkter
+  list-style: none;
+  display: inline-block;
+
 }
 
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
   font-family: "Open Sans";
-  font-size: 30pt;
+  font-size: 24pt;
 
 }
 
@@ -126,6 +130,15 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+.aboutfaner{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
 }
 
 @media screen and (min-width: 992px) {
