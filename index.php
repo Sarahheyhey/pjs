@@ -37,12 +37,13 @@
 
 <meta property="og:locale" content="da_DK" >
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
