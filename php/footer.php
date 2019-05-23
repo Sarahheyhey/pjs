@@ -1,57 +1,48 @@
-<!doctype html>
-<!-- Fortæller det er html5 -->
-<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
-<html lang="da">
+<footer>
 
-<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
-<head>
+    <div class="looking-partners-footer">
 
-<!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
-<meta charset="utf-8">
+        <h2>Let's team up!</h2>
+        <p>We are always looking for new partners. <br>
+        Shoot us an e-mail!</p>
 
-<!-- Titel som ses oppe i browserens tab mv. -->
-<title>Sigende titel</title>
+    </div>
 
-<!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-<meta name="robots" content="All">
-<meta name="author" content="Udgiver">
-<meta name="copyright" content="Information om copyright">
-<meta name="description" content="Free Web tutorials">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <div class="some-footer">
+        <div class="some-footer-fa-in">
+            <img src="images/face-logo-8.png">
+            <img src="images/insta-logo-8.png">
+        </div>
+        <div class="some-footer-cu-tr">
+            <img src="images/culture-trip-logo.png">
+            <img src="images/trip-advisor-logo.png">
+        </div>
+    </div>
 
-<!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <h1>Locations</h1>
 
-<!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="sala-store-location">
+        <h2>Sala Store</h2>
+        <p>145-147 Nguyen Co Thach, An Loi Dong Ward, District 2, HCM
+            <br><br>
+            Tel #: +84 934000591</p>
+    </div>
 
-<meta property="og:title" content="titel" >
+    <div class="vincom-store-location">
+        <h2>Vincom Center Dong Khoi</h2>
 
-<meta property="og:type" content="website" >
+        <p>15B-B3, 72 Le Thanh Ton Street, District 1, HCM
+            <br><br>
+            Tel #: +84 934000631</p>
+    </div>
 
-<meta property="og:url" content="http://www.domain.dk" >
+    <div class="bis-store-location">
+        <h2>British International School</h2>
 
-<meta property="og:image" content="https://www.domain.dk/img.jpg" >
+        <p>101 Thao Dien Street, District 2, HCM
+            <br><br>
+            Tel #: +84 903000172</p>
+    </div>
 
-<meta property="og:description" content="Beskrivelse" >
-
-<meta property="og:locale" content="da_DK" >
-
-
-</head>
-
-<!-- i <body> har man alt indhold på siden -->
-<body>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(e) {
-    // Din kode her
-});
-</script>
-
-</body>
-</html>
+    <p>Copyright © 2019 PJ's Coffee Vietnam</p>
+</footer>
