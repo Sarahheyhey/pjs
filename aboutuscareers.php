@@ -43,7 +43,63 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<section class="carrers">
 
+    <div class="aboutoverskrift">
+        <h1>
+            About Us
+        </h1>
+
+    </div>
+
+    <ul class="aboutfaner">
+
+        <li>
+            <a href="aboutushistory.php" target="_self"> <h2> History <b>| </b>  </h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutusbeans.php" target="_self"><h2>Beans <b>| </b> </h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutuscareers.php" target="_self"><h2 style="color: #e9bcf1">Careers</h2> </a>
+        </li>
+
+
+    </ul>
+
+<div class="carrerstext">
+    <p style="color: #3e2516">
+        Working in PJ’s Coffee isn’t just a job, it’s an opportunity unlike any other. <br> <br> Here you will have the opportunity to work with coffee experts and experienced baristas. <br> <br> We have some of the most advanced equipment and the staff to teach you how to use it.
+
+    </p>
+</div>
+
+
+
+
+<div class="carrerindhod">
+
+    <div class="carrers1indhold">
+        <div class="carrers1billede"></div>
+        <div class="carrers1titl">
+            <h2 style="color: white"> Operations Manager  </h2>
+        </div>
+        <div class="carrers1beskriv">
+            <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
+        </div>
+
+
+            <button class="carrersknap" type="button"></button>
+
+    </div>
+
+</div>
+
+
+
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
