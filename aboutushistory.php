@@ -43,61 +43,189 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-<div class="aboutContainer">
+<section class="aboutContainer">
 
     <div class="aboutoverskrift">
         <h1>
             About Us
         </h1>
+
     </div>
 
-    <ul class="aboutfaner">
+         <ul class="aboutfaner">
 
-        <li>
+           <li>
+               <a href="aboutushistory.php" target="_self"> <h2 style="color: #e9bcf1">History <b>| </b>  </h2> </a>
+           </li>
 
-            <a href="aboutushistory.php" target="_self"> <h2>History</h2> </a>
-        </li>
+            <li>
+            <a href="aboutusbeans.php" target="_self"><h2>Beans <b>| </b> </h2> </a>
+            </li>
 
-        <li>
-            <a href="aboutusbeans.php" target="_self"><h2>Beans</h2> </a>
-        </li>
-
-        <li>
+            <li>
             <a href="aboutuscareers.php" target="_self"><h2>Careers</h2> </a>
-        </li>
+            </li>
 
 
-    </ul>
+        </ul>
 
         <div class="aboutindhold">
+
+
             <div class="about1">
 
-                <div class="about1overskrift">
+
+                <div class="aboutone">
+
+                    <div class="about1overskrift">
+
+                        <h2>
+                            The Founder Of It All
+                        </h2>
+
+                    </div>
+
+
+
+                    <div class="about1text">
+
+                        <p>
+                            The“PJ” in our name stands for Phyllis Jordan, our founder who opened her first coffee house over three decades ago in New Orleans, USA.  She’s a pioneers of sustainable coffee – her idea was to create unique coffee blends and roast the beans in small batches. <br> <br> The same way we still do it today in our roasting facility in the US.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="about1billede">
+
+                    <img src="images/kvindemobil.jpg"</div>
+            </div>
+
+
+        </div>
+
+
+
+
+                <div class="aboutindhold2">
+
+
+
+                    <div class="abottwo">
+
+
+                        <div class="about2overskrift">
+
+                            <h2>
+                                History of the Roast
+                            </h2>
+
+                        </div>
+
+
+                        <div class="about2text">
+
+                            <p>
+                                New Orleans, Louisiana is the home of PJ’s Coffee. Coffee first arrived in 1720 when French Explorers introduced it to the city. <br> <br> Today, one third of all the coffee in North America arrives first on the docks of the Crescent City.  New Orleans is the coffee capital of the USA and the largest coffee roasting plant in the world is located there
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="about2billedemobile">
+                        <img src="images/menneskermobil.jpg">
+                    </div>
+
+                </div>
+
+
+
+
+        <div class="aboutindhold3">
+
+            <div class="abouttree">
+
+                <div class="about3overskrift">
 
                     <h2>
-                        The Founder Of It All
+                        Quality Coffee
                     </h2>
 
                 </div>
-                <div class="about1text">
+
+                <div class="about3text">
 
                     <p>
-                        The“PJ” in our name stands for Phyllis Jordan, our founder who opened her first coffee house over three decades ago in New Orleans, USA.  She’s a pioneers of sustainable coffee – her idea was to create unique coffee blends and roast the beans in small batches – the same way we still do it today in our roasting facility in the US.
+                        Since 1978, well before the coffee craze, the first PJ’s coffee opened on Maple Street. Ever since, PJ’s has been mastering the art of roasting every bean to bring out its unique aroma and flavor. <br> <br> Early on customers sought out coffee they knew had been roasted by hand in small batches.
 
                     </p>
 
                 </div>
-                <div class="about1billede">
 
-                </div>
+            </div>
+
+
+            <div class="about3billede">
+                <img src="images/kaffeplantemobile.jpg">
             </div>
         </div>
 
 
 
 
+        <div class="aboutindhold4">
 
-</div>
+
+
+             <div class="aboutfour">
+
+
+                 <div class="about4overskrift">
+
+                     <h2>
+                         Pj´s Coffee vietnam
+                     </h2>
+
+                 </div>
+
+
+                 <div class="about4text">
+
+                     <p>
+                         Rick Yvanovich being an expat, grew a love of Vietnamese coffee. <br> <br> He  thought that the quality and styles of international coffee coming into Viet Nam, were not the greatest and while they might be trendy, they did not match Vietnamese “tastes” or educate the Vietnamese consumer about coffee or create a unique coffee experience. <br> <br>
+
+                         New Orleans has a hot and sticky climate that is similar to Vietnam, a history, culture and gastronomy that are French inspired. Where we today mix Vietnamese, American and French roast to create a unique coffee experience for you.
+
+                     </p>
+
+
+                 </div>
+             </div>
+
+
+            <div class="about4billede">
+                <img src="images/rickmobile.jpg"
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
