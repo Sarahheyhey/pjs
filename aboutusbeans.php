@@ -43,14 +43,72 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require("php/header.php")
+?>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+            <div id="worldmap"></div>
+        </div>
+    </div>
+</div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(e) {
-    // Din kode her
-});
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="dist/jquery.twism.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#worldmap').twism("create",
+            {
+                map: "world",
+                color: "#cecece",
+                border: "none",
+                hoverColor: "none",
+                hoverBorder: "none",
+                backgroundColor: "none",
+                disableCountries: ['ar', 'cn', 'ca'],
+                individualCountrySettings: [{
+                    name: "co",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "gt",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "hn",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "br",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "et",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "id",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "pg",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }]
+            }, function() {
+                //callback function after map loads
+                $('#worldmap').twism("setCountry", {
+                    name: "ca",
+                    color: "#cecece",
+                    hoverColor: "#cecece",
+                    hoverBorder: "none",
+                });
+            });
+    });
 </script>
 
 </body>

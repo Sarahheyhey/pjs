@@ -21,18 +21,18 @@
         <ul class="menu">
 
             <li>
-                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="aboutushistory.php">About Us</a>
+                <a href="aboutushistory.php">About Us <i class="fas fa-chevron-down"></i></a>
             </li>
 
             <li>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="ourmenu.php">Our Menu</a>
+                <a href="ourmenu.php">Our Menu <i class="fas fa-chevron-down"></i></a>
             </li>
 
             <li>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="blogevents.php">Blog & Events</a>
+                <a href="blogevents.php">Blog & Events <i class="fas fa-chevron-down"></i></a>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
             </li>
         </ul>
     </nav>
@@ -40,11 +40,11 @@
 
     <div class="header-menu">
 
-        <h2><a href="ourmenu.php">Our Menu</a></h2>
+        <h2><a href="ourmenu.php">Our Menu <i class="fas fa-chevron-down"></i></a></h2>
 
-        <h2><a href="aboutushistory.php">About Us</a></h2>
+        <h2><a href="aboutushistory.php">About Us <i class="fas fa-chevron-down"></i></a></h2>
 
-        <h2><a href="blogevents.php">Blog & Events</a></h2>
+        <h2><a href="blogevents.php">Blog & Events <i class="fas fa-chevron-down"></i></a></h2>
 
     </div>
 
