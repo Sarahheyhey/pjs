@@ -43,7 +43,54 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<section class="beanscontainer">
 
+    <div class="aboutoverskrift">
+        <h1>
+            About Us
+        </h1>
+
+    </div>
+
+    <ul class="aboutfaner">
+
+        <li>
+            <a href="aboutushistory.php" target="_self"> <h2>History <b>| </b>  </h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutusbeans.php" target="_self"><h2 style="color: #e9bcf1">Beans <b>| </b> </h2> </a>
+        </li>
+
+        <li>
+            <a href="aboutuscareers.php" target="_self"><h2>Careers</h2> </a>
+        </li>
+
+
+    </ul>
+
+    <div class="beansindhold">
+        <div class="beans1text">
+            <p>PJ’s Coffee of New Orleans experts travel around the world to learn as much as they can about the quality of coffee they buy. No detail is too small to be considered, from farming methods to climate and cloud coverage.
+            </p>
+        </div>
+
+        <div class="beans2text">
+            <h2 style="color: #3e2516"> Click on the map to get the info! </h2>
+        </div>
+    </div>
+
+
+<div class="beansmap">
+
+    
+
+
+
+</div>
+
+
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

@@ -13,6 +13,10 @@ $sort: #000000;
 $hvid: #ffffff;
 $graa: #666666;
 
+@mixin sidemarginer{
+  margin: 0 20px;
+}
+
 body {
   margin: 0; // Ingen kanter i siden af browser
 }
@@ -45,9 +49,8 @@ p {
   font-family: "Open Sans";
   font-size: 10pt;
   color: $graa;
+  @include sidemarginer;
 }
-
-
 
 
 
@@ -60,12 +63,10 @@ a{
   background-color: $orange;
   text-align: center;
   cursor: pointer;
-  border: $orange;
+  border: 1px solid $orange;
   text-decoration-color: $hvid;
-  width: 630px;
-  height: 470px;
-  margin: 20px;
-  padding: 20px;
+  text-decoration: none;
+  width: auto;
 
 }
 
@@ -95,6 +96,127 @@ li {
 
 }
 
+.aboutfaner{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+b{
+  color: $brun;
+}
+
+
+.about1overskrift{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.about1text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about1{
+  width: 100%;
+  height: auto;
+}
+
+.about2overskrift{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.about2{
+  width: 100%;
+  height: auto;
+}
+
+.about2billede{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about2text{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about3overskrift{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.about3{
+  width: 100%;
+  height: auto;
+}
+
+.about3billede{
+  margin-bottom: 20px;
+}
+
+.about3text{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about4overskrift{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.about4{
+  width: 100%;
+  height: auto;
+}
+
+.about4text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about4billede{
+  margin-top: 20px;
+}
+
+
+.beans2text{
+
+  text-align: center;
+
+}
+
+.carrerstext{
+  margin: 0 20px;
+}
+
+.carrerindhod{
+  margin: 0 20px;
+}
+
+.carrers1indhold{
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  background-color: $lilla;
+  padding: 20px;
+}
+
+.carrers1billede{
+  width: 100vw;
+  height: 200px;
+}
 
 
 // Sikrer billeder er responsive
@@ -107,13 +229,9 @@ img {
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
-.aboutfaner{
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  text-align: center;
 
-}
+
+
 
 }
 
@@ -140,6 +258,97 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
   }
+
+  @mixin websidemargin{
+    margin-left: 183px;
+    margin-right: 183px;
+  }
+
+
+
+
+.about1billede{
+  width: 400%;
+  height: 300px;
+  display: inherit;
+}
+  
+.about1{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+  .aboutone{
+    display: block;
+
+  }
+ .aboutone{
+   margin-right: 10%;
+ }
+
+.about1text{
+  height: auto;
+}
+
+
+  
+  .about2billedemobile{
+    display: block;
+  }
+
+.abottwo{
+  display: block;
+  margin-left: 10%;
+}
+
+
+  .aboutindhold2{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+
+
+
+
+  .about3billede{
+    display: inline-block;
+    margin-left: 10%;
+  }
+
+  .abouttree{
+    display: inline-block;
+   
+  }
+
+
+  .aboutindhold3{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+
+  .about4billede{
+    display: block;
+  }
+
+  .abotfour{
+    display: block;
+  }
+
+
+  .aboutindhold4{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+.aboutindhold{
+  @include websidemargin
+}
 
 }
 
