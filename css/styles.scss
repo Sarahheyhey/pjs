@@ -41,6 +41,7 @@ h2{
   font-size: 12pt;
   font-weight: normal;
   color: $lilla;
+  margin: 0;
 }
 
 p {
@@ -108,7 +109,9 @@ b{
   color: $brun;
 }
 
-
+.about1billede{
+  margin-bottom: 20px;
+}
 .about1overskrift{
   text-align: center;
   width: 100%;
@@ -138,7 +141,7 @@ b{
   height: auto;
 }
 
-.about2billede{
+.about2billedemobile{
   margin-bottom: 20px;
   margin-top: 20px;
 }
