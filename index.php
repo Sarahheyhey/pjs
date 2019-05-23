@@ -37,27 +37,23 @@
 
 <meta property="og:locale" content="da_DK" >
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+    require("php/header.php")
+?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1>Pj's Coffee Vietnam</h1>
+<h1>Pj's Coffee Vietnam</h1>
+<h1>Pj's Coffee Vietnam</h1>
+<h1>Pj's Coffee Vietnam</h1>
+<h1>Pj's Coffee Vietnam</h1>
 
 
 

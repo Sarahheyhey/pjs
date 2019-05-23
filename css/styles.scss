@@ -41,6 +41,8 @@ h2{
   font-size: 12pt;
   font-weight: normal;
   color: $lilla;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -56,7 +58,15 @@ p {
 
 a{
   text-decoration: none;
+  color: $lilla;
+  font-family: 'Archer Bold';
 
+
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: $lyslilla
 }
 
 @mixin buttionMobile{
@@ -70,8 +80,6 @@ a{
 
 }
 
-
-
 @mixin buttonWeb{
   background-color: orange;
   text-align: center;
@@ -81,7 +89,9 @@ a{
 
 }
 
-
+.knap {
+  @include buttonWeb
+}
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -226,6 +236,96 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+header {
+  display: flex;
+  height: 100px;
+  border-bottom: 4px solid $lilla;
+  align-items: center;
+  justify-content: right;
+}
+
+.logo-mobile {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.logo-web {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  z-index: 5;
+  padding-right: 10%;
+  width: 100%;
+
+  img {
+    height: auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  hr {
+    color: rgba(255, 255, 255, 0.50);
+  }
+
+  .toggle, [id^=drop] {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 30px;
+    float: right;
+  }
+
+  .toggle:hover {
+    cursor: pointer;
+  }
+
+  ul {
+    display: none;
+    padding: 0;
+    margin: 15vw 0 0 0;
+    list-style: none;
+    position: relative;
+  }
+
+  ul li {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 14px 7vw;
+    font-size: 21pt;
+    text-decoration: none;
+    font-family: "Open Sans";
+
+  }
+
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 25px;
+  }
+
+}
+
+.header-menu {
+  display: none;
+}
+
+.sprog-header {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
@@ -247,7 +347,7 @@ img {
 
   h2{
     font-family: 'Archer Bold';
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: normal;
     color: $lilla;
   }
@@ -258,6 +358,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
   }
+
 
   @mixin websidemargin{
     margin-left: 183px;
@@ -349,6 +450,60 @@ img {
 .aboutindhold{
   @include websidemargin
 }
+
+
+  header {
+    display: grid;
+    grid-template-columns: 20% 40% 30% 10%;
+    grid-template-rows: 50% 50%;
+    height: 100px;
+    width: 100%;
+    border-bottom: 4px solid $lilla;
+    align-items: stretch;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-web {
+    display: grid;
+    grid-column: 1 / span 1;
+    position: absolute;
+    width: 110px;
+    height: auto;
+    margin: 15px 0 0 8%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+
+    h2{
+      display: inline;
+    }
+  }
+
+  .sprog-header {
+    display: inline-flex;
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    width: 50px;
+    align-self: start;
+    justify-self: right;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
 
 }
 
