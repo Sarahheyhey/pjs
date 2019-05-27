@@ -43,6 +43,10 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require("php/header.php")
+?>
+
 <section class="aboutContainer">
 
     <div class="aboutoverskrift">

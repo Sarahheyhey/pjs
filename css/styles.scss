@@ -89,9 +89,7 @@ a:hover {
 
 }
 
-.knap {
-  @include buttonWeb
-}
+
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -118,7 +116,9 @@ b{
   color: $brun;
 }
 
-
+.about1billede{
+  margin-bottom: 20px;
+}
 .about1overskrift{
   text-align: center;
   width: 100%;
@@ -148,7 +148,7 @@ b{
   height: auto;
 }
 
-.about2billede{
+.about2billedemobile{
   margin-bottom: 20px;
   margin-top: 20px;
 }
