@@ -1,57 +1,63 @@
-<!doctype html>
-<!-- Fortæller det er html5 -->
-<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
-<html lang="da">
 
-<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
-<head>
+<header>
 
-<!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
-<meta charset="utf-8">
+    <div class="logo-mobile">
+        <a href="index.php"><img src="images/pjs_logo_mobile.png"></a>
+    </div>
 
-<!-- Titel som ses oppe i browserens tab mv. -->
-<title>Sigende titel</title>
-
-<!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-<meta name="robots" content="All">
-<meta name="author" content="Udgiver">
-<meta name="copyright" content="Information om copyright">
-<meta name="description" content="Free Web tutorials">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-
-<!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-
-<!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta property="og:title" content="titel" >
-
-<meta property="og:type" content="website" >
-
-<meta property="og:url" content="http://www.domain.dk" >
-
-<meta property="og:image" content="https://www.domain.dk/img.jpg" >
-
-<meta property="og:description" content="Beskrivelse" >
-
-<meta property="og:locale" content="da_DK" >
+    <div class="logo-web">
+        <a href="index.php"><img src="images/logo.png"></a>
+    </div>
 
 
-</head>
+    <nav>
 
-<!-- i <body> har man alt indhold på siden -->
-<body>
+        <label for="drop" class="toggle">
+            <img src="images/Burger.png" alt="menu">
+        </label>
+
+        <input type="checkbox" id="drop" />
+
+        <ul class="menu">
+
+            <li>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <a href="aboutushistory.php">About Us</a>
+            </li>
+
+            <li>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <a href="ourmenu.php">Our Menu</a>
+            </li>
+
+            <li>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <a href="blogevents.php">Blog & Events</a>
+            </li>
+        </ul>
+    </nav>
 
 
+    <div class="header-menu">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <h2><a href="ourmenu.php">Our Menu</a></h2>
 
-<script type="text/javascript">
-$(document).ready(function(e) {
-    // Din kode her
-});
+        <h2><a href="aboutushistory.php">About Us</a></h2>
+
+        <h2><a href="blogevents.php">Blog & Events</a></h2>
+
+    </div>
+
+    <div class="sprog-header">
+        <a href="#"><img src="images/en.png"></a>
+        <a href="#"><img src="images/vi.png"></a>
+    </div>
+
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $('.toggle').click(function () {
+        $('.menu').toggle("slow")
+    })
 </script>
-
-</body>
-</html>
