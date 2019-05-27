@@ -31,7 +31,7 @@
 
             <li>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="blogevents.php">Blog & Events <i class="fas fa-chevron-down"></i></a>
+                <a href="blog.php">Blog & Events <i class="fas fa-chevron-down"></i></a>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
             </li>
         </ul>
@@ -44,7 +44,7 @@
 
         <h2><a href="aboutushistory.php">About Us <i class="fas fa-chevron-down"></i></a></h2>
 
-        <h2><a href="blogevents.php">Blog & Events <i class="fas fa-chevron-down"></i></a></h2>
+        <h2><a href="blog.php">Blog & Events <i class="fas fa-chevron-down"></i></a></h2>
 
     </div>
 

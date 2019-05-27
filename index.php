@@ -50,16 +50,10 @@
     require("php/header.php")
 ?>
 
-<h1>Pj's Coffee Vietnam</h1>
-<h1>Pj's Coffee Vietnam</h1>
-<h1>Pj's Coffee Vietnam</h1>
-<h1>Pj's Coffee Vietnam</h1>
-<h1>Pj's Coffee Vietnam</h1>
+
 
 <?php
-
     require("php/footer.php")
-
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

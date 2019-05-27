@@ -6,6 +6,7 @@
 }
 
 $lilla:  #6a2976;
+$lillaTrans: rgba(106, 41, 118, 0.5);
 $lyslilla: #e9bcf1;
 $orange: #f99c33;
 $brun: #3e2516;
@@ -45,6 +46,15 @@ h2{
   padding: 0;
 }
 
+//h3 er datoer på blog og events og lignende
+h3{
+  font-family: "Open Sans";
+  font-size: 8pt;
+  font-weight: normal;
+  color: $lilla;
+  @include sidemarginer;
+}
+
 p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
@@ -74,10 +84,9 @@ a:hover {
   text-align: center;
   cursor: pointer;
   border: 1px solid $orange;
-  text-decoration-color: $hvid;
+  color: $hvid;
   text-decoration: none;
   width: auto;
-
 }
 
 @mixin buttonWeb{
@@ -106,6 +115,13 @@ li {
 
 }
 
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
 .aboutfaner{
   display: inline-block;
   width: 100%;
@@ -113,6 +129,7 @@ li {
   text-align: center;
 
 }
+
 
 b{
   color: $brun;
@@ -229,12 +246,88 @@ b{
 }
 
 
-// Sikrer billeder er responsive
-img {
-  display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
+#blogs {
+  @include sidemarginer;
+  display: grid;
 }
+
+.blogindlaeg-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogindlaeg {
+  display: block;
+  border: 2px solid $lilla;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+
+  h2 {
+    text-align: center;
+    margin: 10px 15px 0 15px;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  p {
+    color: $lilla;
+    margin-top: 5px;
+  }
+
+  a {
+    margin: 10px 20px 20px 0;
+    float: right;
+  }
+}
+
+.blog-knap {
+  @include buttionMobile;
+  padding: 10px 30px;
+
+  h2{
+    margin: 0;
+  }
+}
+
+.new-data {
+
+}
+
+.menu-sektions-overskrifter{
+  font-size: 18pt;
+  margin: 3vw 0 2vw 4vw;
+  text-align: left;
+}
+
+.grid-layout {
+  display: grid;
+  background-color: $lilla;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 28vw);
+  grid-gap: 5px;
+  padding: 5px 10px;
+}
+
+.gallery-item {
+  display: flex;
+  overflow: hidden;
+  align-items: end;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.gallery-item-1{
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+
 
 header {
   background-color: white;
@@ -347,6 +440,7 @@ footer {
   display: grid;
   grid-template-rows: 180px auto auto auto auto auto;
   grid-template-columns: 50% 50%;
+  margin-top: 40px;
 
   h1 {
     color: white;
@@ -425,9 +519,18 @@ footer {
   }
 }
 
+.copyright {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 2;
+
+  p {
+    margin: 10px 10px;
+    color: $graa;
+  }
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-
 
 
 
@@ -464,6 +567,11 @@ footer {
     margin-right: 183px;
   }
 
+  #worldmap {
+    width: 100%;
+    height: 500px;
+
+  }
 
 
 
@@ -553,7 +661,7 @@ footer {
 
   header {
     display: grid;
-    grid-template-columns: 20% 40% 30% 10%;
+    grid-template-columns: 20% 30% 40% 10%;
     grid-template-rows: 50% 50%;
     height: 90px;
     width: 100%;
@@ -607,11 +715,203 @@ footer {
     padding-top: 15px;
   }
 
+  #blogs {
 
+  }
+
+  .blogindlaeg-container {
+    display: block;
+    overflow: auto;
+    height: 100vh;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .blogindlaeg {
+    display: inline-block;
+    border: 3px solid $lilla;
+    width: 400px;
+    height: auto;
+    margin: 20px 20px;
+    white-space: normal;
+
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    p {
+      color: $lilla;
+      margin-top: 5px;
+      padding: 0 15px;
+    }
+
+    a {
+      margin: 10px 20px 20px 0;
+      float: right;
+    }
+  }
+
+  .blog-knap {
+    @include buttionMobile;
+    padding: 10px 30px;
+
+    h2{
+      margin: 0;
+    }
+  }
+
+  .kalender {
+    height: 765px;
+  }
+
+  .kalender_kalender {
+    justify-items: center;
+    width: 98vw;
+  }
+
+  .grid-layout {
+    display: grid;
+    background-color: $lillaTrans;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 15vw);
+    grid-gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .gallery-item {
+    z-index: 9;
+    display: flex;
+    overflow: hidden;
+    align-items: end;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .gallery-item-color{
+    display: grid;
+    z-index: 10;
+    background-color: $lillaTrans;
+    opacity: 0;
+    transition: .5s ease;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: end;
+    padding-bottom: 2vw;
+
+    p{
+      color: white;
+    }
+
+    h2{
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .gallery-item-color:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  .gallery-item-1{
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+    background-color: $lilla;
+    display: grid;
+    grid-template-rows: 180px auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+
+    h1 {
+      color: white;
+      grid-row: 2/ span 1;
+      grid-column: 1 / span 8;
+      margin: 0 0 20px 0;
+      padding: 0;
+    }
+    h2 {
+      color: $hvid;
+      font-size: 14pt;
+    }
+    p {
+      color: $hvid;
+    }
+  }
+
+  .looking-partners-footer {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
+  }
+
+  .some-footer {
+    grid-row: 1 / span 1;
+    grid-column: 5 / span 3;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+  }
+
+  .some-footer-fa-in {
+    display: inline-block;
+    height: 80px;
+  }
+
+  .some-footer-cu-tr {
+    display: inline-block;
+    height: 80px;
+  }
+
+  .sala-store-location {
+    grid-row: 3/ span 1;
+    grid-column: 2 / span 2;
+  }
+
+  .vincom-store-location {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 2;
+  }
+
+  .bis-store-location  {
+    grid-row: 3 / span 1;
+    grid-column: 6 / span 2;
+  }
+
+  .copyright {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 8;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  header {
+    grid-template-columns: 20% 40% 30% 10%;
+
+  }
+
 }
 
 @media print {
