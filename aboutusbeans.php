@@ -150,6 +150,7 @@ require("php/header.php")
             });
     });
 
+    </script>
 
 </body>
 </html>

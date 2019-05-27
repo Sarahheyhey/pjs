@@ -4,18 +4,18 @@
 
         <h2>Let's team up!</h2>
         <p>We are always looking for new partners. <br>
-        Shoot us an e-mail!</p>
+        Shoot us an e-mail! <br>marketing@pjscoffeevietnam.com</p>
 
     </div>
 
     <div class="some-footer">
         <div class="some-footer-fa-in">
-            <img src="images/face-logo-8.png">
-            <img src="images/insta-logo-8.png">
+            <a href="https://www.facebook.com/Pjscoffeevietnam/"><img src="images/face-logo-8.png"></a>
+            <a href="https://www.instagram.com/pjsvietnam/"><img src="images/insta-logo-8.png"></a>
         </div>
         <div class="some-footer-cu-tr">
-            <img src="images/culture-trip-logo.png">
-            <img src="images/trip-advisor-logo.png">
+            <a href="#"><img src="images/culture-trip-logo.png"></a>
+            <a href="#"><img src="images/trip-advisor-logo.png"></a>
         </div>
     </div>
 
@@ -44,5 +44,5 @@
             Tel #: +84 903000172</p>
     </div>
 
-    <p>Copyright © 2019 PJ's Coffee Vietnam</p>
+    <div class="copyright"><p>Copyright © 2019 PJ's Coffee Vietnam</p></div>
 </footer>
