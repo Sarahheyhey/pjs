@@ -43,6 +43,10 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require("php/header.php")
+?>
+
 <section class="beanscontainer">
 
     <div class="aboutoverskrift">
@@ -91,6 +95,11 @@
 
 
 </section>
+
+
+<?php
+require ("php/footer.php")
+?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

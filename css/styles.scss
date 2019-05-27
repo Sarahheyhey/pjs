@@ -77,6 +77,9 @@ a:hover {
   text-decoration-color: $hvid;
   text-decoration: none;
   width: auto;
+  p{
+    text-decoration-color: $hvid;
+  }
 
 }
 
@@ -109,12 +112,11 @@ li {
   width: 100%;
   height: auto;
   text-align: center;
+  margin-bottom: 30px;
 
 }
 
-b{
-  color: $brun;
-}
+
 
 .about1billede{
   margin-bottom: 20px;
@@ -148,9 +150,16 @@ b{
   height: auto;
 }
 
+.aboutindhold2{
+ width: 100%;
+}
+
+
 .about2billedemobile{
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .about2text{
@@ -194,6 +203,7 @@ b{
 .about4text{
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 .about4billede{
@@ -204,29 +214,125 @@ b{
 .beans2text{
 
   text-align: center;
+  margin-top: 20px;
 
 }
 
 .carrerstext{
-  margin: 0 20px;
+
 }
 
-.carrerindhod{
-  margin: 0 20px;
+.carrerindhold{
+width: 100%;
+  height: auto;
+  justify-content: center;
 }
 
 .carrers1indhold{
   margin-top: 25px;
-  width: 100%;
-  height: auto;
+  height: 450px;
   background-color: $lilla;
-  padding: 20px;
+
+}
+.carrers1beskriv{
+
+}
+
+.carrers1titl{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .carrers1billede{
-  width: 100vw;
-  height: 200px;
+
+  max-width: 100%;
+
 }
+
+.carrerknap{
+ @include buttionMobile;
+
+}
+
+.carrers2indhold{
+  margin-top: 25px;
+  height: 450px;
+  background-color: $lilla;
+
+}
+
+.carrers2titl{
+
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+
+
+}
+
+.carrers2billede{
+  max-width: 100%;
+}
+
+.jobknap{
+ margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  a{
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: white;
+  }
+}
+
+
+
+button {
+
+  padding: 1rem 2rem;
+  background: $orange;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+  transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $orange;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $orange;
+  text-decoration-color: $hvid;
+  width: auto;
+  margin: 0 auto;
+
+
+  p{
+    text-decoration: none;
+  }
+
+}
+
+button:hover,
+button:focus {
+  background: $lyslilla;
+  border-color: $lyslilla;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
 
 
 // Sikrer billeder er responsive
@@ -369,37 +475,68 @@ nav {
 
 
 .about1billede{
-  width: 400%;
+  width: 50%;
   height: 300px;
   display: inherit;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  img{
+    height: auto;
+    max-width: 500px;
+    display: flex;
+    position: absolute;
+  }
 }
   
 .about1{
   display: flex;
   flex-direction: row;
   height: auto;
+  width: 100%;
+  padding-top: 20px;
 }
   .aboutone{
     display: block;
+    width: 50%;
 
   }
  .aboutone{
-   margin-right: 10%;
+   
  }
 
 .about1text{
   height: auto;
+  margin-bottom: -20px;
+  padding-right: 40px;
 }
 
 
   
   .about2billedemobile{
-    display: block;
+    display: flex;
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    margin-top: -20px;
+
+    img{
+      height: auto;
+      max-width: 500px;
+      display: flex;
+      position: absolute;
+    }
   }
 
 .abottwo{
   display: block;
-  margin-left: 10%;
+  
+  width: 50%;
 }
 
 
@@ -409,17 +546,32 @@ nav {
   }
 
 
-
-
-
+ .about2text{
+   margin-bottom: -20px;
+   padding-left: 40px;
+ }
 
   .about3billede{
-    display: inline-block;
-    margin-left: 10%;
+    display: flex;
+    width: 50%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    margin-bottom: -2px;
+
+    img{
+      height: auto;
+      max-width: 500px;
+      display: flex;
+      position: absolute;
+
+    }
   }
 
   .abouttree{
-    display: inline-block;
+    display: block;
+    width: 50%;
    
   }
 
@@ -427,18 +579,31 @@ nav {
   .aboutindhold3{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
 
+.about3text{
+  margin-bottom: -20px;
+  padding-right: 40px;
 
+}
 
-
+.about3overskrift{
+  margin-top: 20px;
+}
 
   .about4billede{
     display: block;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -20px;
+
   }
 
-  .abotfour{
+  .aboutfour{
     display: block;
+    width: 50%;
   }
 
 
@@ -446,6 +611,12 @@ nav {
     display: flex;
     flex-direction: row-reverse;
   }
+
+  .about4text{
+    margin-bottom: -20px;
+    padding-left: 40px;
+  }
+
 
 .aboutindhold{
   @include websidemargin
@@ -504,6 +675,61 @@ nav {
     padding-top: 15px;
   }
 
+
+.carrerstext{
+  @include websidemargin;
+}
+
+  .carreroverst{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+.carrers1indhold{
+  width: 40%;
+  height: auto;
+  margin-left: 100px;
+
+
+  p{
+    margin-left: 20px;
+  }
+}
+
+  .carrers1billede{
+
+  }
+
+  .carrers2indhold{
+    width: 40%;
+    height: auto;
+    margin-right: 100px;
+
+    p{
+      margin-left: 20px;
+    }
+
+  }
+
+
+  .carrerindhold{
+    @include websidemargin;
+  }
+
+.carrernederst{
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrers1indhold{
+  margin-left: 100px;
+}
+
+  .carrers1indhold{
+
+  }
 
 }
 

@@ -210,9 +210,13 @@ require("php/header.php")
              </div>
 
 
-            <div class="about4billede">
-                <img src="images/rickmobile.jpg"
-            </div>
+
+              <div class="about4billede">
+                  <img src="images/rickmobile.jpg"
+              </div>
+
+
+
 
 
         </div>
@@ -226,7 +230,9 @@ require("php/header.php")
 </section>
 
 
-
+<?php
+require ("php/footer.php")
+?>
 
 
 
