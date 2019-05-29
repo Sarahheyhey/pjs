@@ -85,14 +85,13 @@ require("php/header.php")
         </div>
     </div>
 
-
-<div class="beansmap">
+</section>
 
     
 
 
 
-</div>
+
 
 
 <script src="http://code.jquery.com/jquery.js"></script>
@@ -149,20 +148,7 @@ require("php/header.php")
             });
     });
 
-</section>
 
-
-<?php
-require ("php/footer.php")
-?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(e) {
-    // Din kode her
-});
-</script>
-
+  </script>
 </body>
 </html>
