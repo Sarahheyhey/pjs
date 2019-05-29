@@ -43,6 +43,10 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require("php/header.php")
+?>
+
 <section class="carrers">
 
     <div class="aboutoverskrift">
@@ -70,8 +74,8 @@
     </ul>
 
 <div class="carrerstext">
-    <p style="color: #3e2516">
-        Working in PJ’s Coffee isn’t just a job, it’s an opportunity unlike any other. <br> <br> Here you will have the opportunity to work with coffee experts and experienced baristas. <br> <br> We have some of the most advanced equipment and the staff to teach you how to use it.
+    <p style="color: #666666">
+        Working in PJ’s Coffee isn’t just a job, it’s an opportunity unlike any other. <br> <br> Here you will have the opportunity to work with coffee experts and experienced baristas. <br>  We have some of the most advanced equipment and the staff to teach you how to use it.
 
     </p>
 </div>
@@ -81,25 +85,147 @@
 
 <div class="carrerindhod">
 
-    <div class="carrers1indhold">
-        <div class="carrers1billede"></div>
-        <div class="carrers1titl">
-            <h2 style="color: white"> Operations Manager  </h2>
+
+    <div class="carreroverst">
+
+
+
+        <div class="carrers1indhold">
+
+            <div class="carrers1billede"> <img src="images/pjsjob1.jpg"></div>
+
+
+            <div class="carrers1titl">
+                <h2 style="color: white"> Operations Manager  </h2>
+            </div>
+
+            <div class="carrers1beskriv">
+                <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
+            </div>
+
+            <div class="jobknap">
+
+                <button class="carrersknap" type="button">
+                    <a href="https://www.trginternational.com/who-we-are/careers/vacancies/operations-manager-pjs-coffee-vietnam/?slelect_job=42"> <b> Apply Now </b> </a>
+                </button>
+
+            </div>
+
+
         </div>
+
+
+
+        <div class="carrers2indhold">
+
+            <div class="carrers2billede">
+                <img src="images/pjsjob2.jpg"></div>
+
+
+
+
+            <div class="carrers2titl">
+                <h2 style="color: white"> Barista  </h2>
+            </div>
+
+            <div class="carrers2beskriv">
+                <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
+            </div>
+
+            <div class="jobknap">
+
+                <button class="carrersknap" type="button">
+                    <a href="https://www.trginternational.com/who-we-are/careers/vacancies/barista-pjs-coffee-vietnam/?select_job=43"> <b> Apply Now </b> </a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="carrernederst">
+
+
+
+
+    <div class="carrers3indhold">
+
+        <div class="carrers3billede">
+            <img src="images/pjsjob3.jpg"></div>
+
+
+
+
+        <div class="carrers3titl">
+            <h2 style="color: white"> Assistant Store Manager </h2>
+        </div>
+
+        <br><br>
+
+        <div class="carrers3beskriv">
+            <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
+        </div>
+
+        <div class="jobknap">
+
+            <button class="carrersknap" type="button">
+                <a href="https://www.trginternational.com/who-we-are/careers/vacancies/assistant-store-manager/?select_job=44"> <b> Apply Now </b> </a>
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="carrers1indhold">
+
+        <div class="carrers1billede">
+            <img src="images/pjsjob4.jpg"></div>
+
+
+
+
+        <div class="carrers1titl">
+            <h2 style="color: white"> Shift Supervisor/ Leader </h2>
+        </div>
+
         <div class="carrers1beskriv">
             <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
         </div>
 
+        <div class="jobknap">
 
-            <button class="carrersknap" type="button"></button>
+            <button class="carrersknap" type="button">
+                <a href="https://www.trginternational.com/who-we-are/careers/vacancies/shift-leader-supervisor/?select_job=45"> <b> Apply Now </b> </a>
+            </button>
+
+        </div>
+
 
     </div>
+
 
 </div>
 
 
 
+    </div>
+
+
+
+
+
+
+
 </section>
+
+
+<?php
+require ("php/footer.php")
+?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
