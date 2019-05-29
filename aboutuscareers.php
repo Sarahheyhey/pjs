@@ -161,6 +161,8 @@ require("php/header.php")
             <h2 style="color: white"> Assistant Store Manager </h2>
         </div>
 
+        <br><br>
+
         <div class="carrers3beskriv">
             <p style="color: white"> Full-time / PJ's Coffee Vietnam </p>
         </div>

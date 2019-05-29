@@ -238,6 +238,19 @@ width: 100%;
 
 }
 
+
+.carrers3indhold{
+  margin-top: 25px;
+  padding-bottom: 20px;
+  background-color: $lilla;
+
+
+}
+
+.carrers3billede{
+
+}
+
 .carrers1titl{
   margin-top: 20px;
   margin-left: 20px;
@@ -273,6 +286,13 @@ width: 100%;
 
 .carrers2billede{
   max-width: 100%;
+}
+
+.carrers3titl{
+
+      margin-top: 20px;
+      margin-left: 20px;
+
 }
 
 .jobknap{
@@ -531,9 +551,192 @@ footer {
   }
 }
 
+
+.indexgallerioverskrift{
+  align-items: center;
+  width: 100%;
+
+}
+
+.indexgalleriknap{
+  justify-items: center;
+  display: flex;
+  margin: 0 auto;
+  @include buttionMobile;
+  padding: 1rem 2rem;
+  background: $orange;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+  transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $orange;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $orange;
+  text-decoration-color: $hvid;
+  width: auto;
+
+
+
+  p{
+    text-decoration: none;
+  }
+
+
+  button:hover,
+  button:focus {
+    background: $lyslilla;
+    border-color: $lyslilla;
+  }
+
+  button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  button:active {
+    transform: scale(0.99);
+  }
+
+
+
+}
+
+
+.indexbilleder{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  margin-right: 20px;
+
+}
+.indexbillederoverst{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  img{
+    width: 48%;
+    height: 200px;
+  }
+
+}
+
+.indexgalleritext{
+  margin-left: 20px;
+}
+
+.indexbilledernederst{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  img{
+    width: 48%;
+    height: 200px;
+  }
+
+}
+
+.indexgalleritext1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.indexgalleritext2{
+  margin-top: 25px;
+}
+
+.videovideo{
+  width: 100%;
+  height: 250px;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.newsletter{
+  height: 400px;
+  width: 100%;
+  background-image: url("../images/nhyedsbrevbaggrund.png");
+  background-repeat: repeat-x;
+  background-size: 100% 400px;
+  background-position: center;
+  margin-top: 20px;
+  
+  
+}
+
+.newsoverskrift{
+  padding-top: 10px;
+}
+
+.newsknap{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+.newsform{
+
+    display: flex;            
+    justify-content: center;  
+}
+
+form{
+  background-color: $hvid;
+  width: 60%;
+  height: auto;
+  margin-top: 40px;
+  border-color:$lilla;
+  border: transparent;
+  border-width: 0.08px;
+  padding: 5px;
+  
+  p{
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+  }
+}
+
+input{
+  
+  background-color: $hvid;  
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: none;
+  text-decoration-color: $lilla;
+
+
+
+   p{                                      
+     text-align: center;                   
+     font-weight: lighter;                 
+     font-family: 'Open Sans', sans-serif; 
+     font-size: smaller;
+     color: $lilla;
+     text-decoration: none;
+   }                                       
+
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-
 
 
 
@@ -542,6 +745,87 @@ footer {
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  .videovideo{
+    height: 500px;
+    margin-bottom: 100px;
+  }
+
+  .newstext{
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter{
+    
+    width: 100vw;
+    background-size: 100% 400px;
+    margin-left: -183px;
+
+    p{
+      margin-right: 90px;
+      margin-left: 90px;
+      margin-bottom: -10px;
+    }
+
+    form{
+      margin-top: 20px;
+    }
+    
+  }
+
+
+ .newsoverskrift{
+
+
+   h1{
+     margin-bottom: 20px;
+   }
+ }
+
+  .indexbillederoverst{
+
+    height: auto;
+
+  }
+
+  .indexbilledernederst{
+
+    height: auto;
+
+  }
+
+.indexcontent{
+  margin-right: 183px;
+  margin-left: 183px;
+
+}
+
+.indexgalleritext{
+
+  flex-direction: row;
+}
+
+
+.indexcontent{
+  flex-direction: row;
+}
+
+.indexgalleri{
+  display: flex;
+  flex-direction: row;
+}
+  .indexgalleri{
+
+  }
+
+.indexgallerioverskrift{
+  margin-top: 100px;
+}
+
+
+
   h1{
     font-family: 'Archer Bold';
     font-size: 46pt;
@@ -794,6 +1078,8 @@ footer {
   width: 40%;
   height: auto;
   margin-left: 100px;
+  margin-right: 150px;
+  padding-bottom: 20px;
 
 
   p{
@@ -808,7 +1094,8 @@ footer {
   .carrers2indhold{
     width: 40%;
     height: auto;
-    margin-right: 100px;
+    margin-right: 150px;
+    margin-left: 50px;
 
     p{
       margin-left: 20px;
@@ -816,7 +1103,24 @@ footer {
 
   }
 
+.carrers3indhold{
+  width: 40%;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-bottom: 20px;
 
+  p{
+    margin-left: 20px;
+  }
+
+  h2{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+
+}
   .carrerindhold{
     @include websidemargin;
   }
@@ -830,9 +1134,12 @@ footer {
   margin-left: 100px;
 }
 
-  .carrers1indhold{
 
+  .carreroverst{
+    margin-bottom: 50px;
   }
+
+
 
 }
 
