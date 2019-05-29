@@ -47,6 +47,7 @@
 require("php/header.php")
 ?>
 
+
 <section class="beanscontainer">
 
     <div class="aboutoverskrift">
@@ -93,6 +94,60 @@ require("php/header.php")
 
 </div>
 
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="dist/jquery.twism.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#worldmap').twism("create",
+            {
+                map: "world",
+                color: "#cecece",
+                border: "none",
+                hoverColor: "none",
+                hoverBorder: "none",
+                backgroundColor: "none",
+                disableCountries: ['ar', 'cn', 'ca'],
+                individualCountrySettings: [{
+                    name: "co",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "gt",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "hn",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "br",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "et",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "id",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }, {
+                    name: "pg",
+                    color: "#6a2976",
+                    hoverColor: "#e9bcf1"
+                }]
+            }, function() {
+                //callback function after map loads
+                $('#worldmap').twism("setCountry", {
+                    name: "ca",
+                    color: "#cecece",
+                    hoverColor: "#cecece",
+                    hoverBorder: "none",
+                });
+            });
+    });
 
 </section>
 

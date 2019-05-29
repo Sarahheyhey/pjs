@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 
 <!-- Titel som ses oppe i browserens tab mv. -->
-<title>Sigende titel</title>
+<title>Pj's Coffee Vietnam - Top 1% coffee beans</title>
 
 <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
 <meta name="robots" content="All">
@@ -38,6 +38,7 @@
 <meta property="og:locale" content="da_DK" >
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 
 </head>
@@ -55,7 +56,11 @@
 <h1>Pj's Coffee Vietnam</h1>
 <h1>Pj's Coffee Vietnam</h1>
 
+<?php
 
+    require("php/footer.php")
+
+?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

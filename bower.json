@@ -1,0 +1,17 @@
+{
+  "name": "tWISM for jQuery",
+  "description": "A jQuery plugin for quick SVG maps",
+  "homepage": "https://github.com/cody1213/twism",
+  "ignore": [],
+  "author": {
+    "name": "Cody Brumfield",
+    "url": "http://codybrumfield.me"
+  },
+  "main": [
+    "dist/jquery.twism.js"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "version": "0.4.6"
+}
