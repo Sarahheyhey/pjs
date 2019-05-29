@@ -39,6 +39,146 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require ("php/header.php")
+?>
+
+<h1>Our Menu</h1>
+
+<ul class="aboutfaner">
+
+
+    <li>
+        <a href="drinks.php" target="_self"><h2>Drinks <b>|</b> </h2> </a>
+    </li>
+
+    <li>
+        <a href="food.php" target="_self"> <h2>Food <b>| </b>  </h2> </a>
+    </li>
+
+    <li>
+        <a href="roasting.php" target="_self"><h2 style="color: #e9bcf1">Roasting <b>| </b> </h2> </a>
+    </li>
+
+    <li>
+        <a href="merch.php" target="_self"><h2>Merchandise</h2> </a>
+    </li>
+
+
+</ul>
+
+<section class="section-beverages-all">
+
+    <div class="grid-layout-roasting">
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Dark-Roast-Espresso-Dolce..jpg">
+
+            <div class="gallery-item-color">
+                <h2>Espresso Dolce</h2>
+                <p>₫310,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Dark-Roast-Viennese-Blend..jpg">
+
+            <div class="gallery-item-color">
+                <h2>Viennese Blend</h2>
+                <p>₫319,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Dark-Roast-Windsor-Court-Blend..jpg">
+
+            <div class="gallery-item-color">
+                <h2>Windsor Court Blend</h2>
+                <p>₫319,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Dark-Roast-French-Roast..jpg">
+
+            <div class="gallery-item-color">
+                <h2>French Toast</h2>
+                <p>₫319,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Flavored-Roast-English-Toffee.jpg">
+
+            <div class="gallery-item-color">
+                <h2>English Toffee</h2>
+                <p>₫359,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Flavored-Roast-Southern-Pecan.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Southern Pecan</h2>
+                <p>₫359,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Flavored-Roast-Hazelnut.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Hazelnut</h2>
+                <p>₫359,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Decaf-Decaf-Viennese-Blend..jpg">
+
+            <div class="gallery-item-color">
+                <h2>Decaf Viennese Blend</h2>
+                <p>₫369,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Medium-Roast-Anniversary-Blend.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Anniversary Blend</h2>
+                <p>₫319,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Medium-Roast-Sumatra-Mandheling.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Sumatra Mandheling</h2>
+                <p>₫359,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Medium-Roast-Colombia-Supremo.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Colombia Supremo</h2>
+                <p>₫319,000</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<?php
+require ("php/footer.php")
+?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>

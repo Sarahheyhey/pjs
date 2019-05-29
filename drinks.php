@@ -52,7 +52,7 @@
 <ul class="aboutfaner">
 
     <li>
-        <a href="drinks.php" target="_self"><h2 style="color: #e9bcf1">Drinks<b>| </b> </h2> </a>
+        <a href="drinks.php" target="_self"><h2 style="color: #e9bcf1">Drinks <b>| </b> </h2> </a>
     </li>
 
     <li>
@@ -70,85 +70,47 @@
 
 </ul>
 
-<section class="section-coffee-hot">
 
-    <h1 class="menu-sektions-overskrifter">Coffee Hot</h1>
 
-    <div class="grid-layout">
+<section class="section-beverages-all">
 
-        <div class="gallery-item gallery-item-1">
-            <img src="images/Cafe-au-lait.jpg">
+    <div class="grid-layout-drinks">
+
+        <div class="gallery-item gallery-2-item-3">
+            <img src="images/cold-brew-iced-coffe.jpg">
 
             <div class="gallery-item-color">
-                <h2>Cafe au Lait</h2>
+                <h2>Cold Brew Iced Coffee</h2>
+                <p>₫69,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-orange.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Orange</h2>
                 <p>₫64,000</p>
             </div>
         </div>
 
-        <div class="gallery-item gallery-item-2">
-            <img src="images/Cappuccino.jpg">
+        <div class="gallery-item gallery-2-item-2">
 
             <div class="gallery-item-color">
-                <h2>Cappuccino</h2>
-                <p>₫64,000</p>
+                <h2>Farve</h2>
+                <p>₫74,000</p>
             </div>
         </div>
 
-        <div class="gallery-item gallery-item-3">
-            <img src="images/Espresso.jpg">
+        <div class="gallery-item gallery-2-item-2">
 
             <div class="gallery-item-color">
-                <h2>Espresso<br></h2>
+                <h2>Farve</h2>
                 <p>₫39,000</p>
             </div>
         </div>
 
-        <div class="gallery-item gallery-item-4">
-            <img src="images/Hot-brew.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Americano</h2>
-                <p>₫47,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-item-5">
-            <img src="images/Hot-Caramel-Creme.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Hot Caramel Creme</h2>
-                <p>₫74,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-item-6">
-            <img src="images/Hot-Vienna-Creme.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Hot Vienna Creme</h2>
-                <p>₫74,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-item-7">
-            <img src="images/Macchiato.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Macchiato</h2>
-                <p>₫47,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-item-8">
-            <img src="images/cafe-lattejpg.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Cafe Latte</h2>
-                <p>₫64,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-item-9">
+        <div class="gallery-item gallery-2-item-1 Hot-brew">
             <img src="images/Hot-brew.jpg">
 
             <div class="gallery-item-color">
@@ -157,15 +119,331 @@
             </div>
         </div>
 
+        <div class="gallery-item gallery-2-item-1 Hot-Caramel-Creme">
+            <img src="images/Hot-Caramel-Creme.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Hot Caramel Creme</h2>
+                <p>₫74,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Cold-brew-iced-mocha-1.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Cold Brew Iced Mocha</h2>
+                <p>₫69,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1 apple-Strawberry-Mint">
+            <img src="images/drinks-apple-Strawberry-Mint.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Apple Strawberry Mint</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1 Macchiato">
+            <img src="images/Macchiato.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Macchiato</h2>
+                <p>₫47,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-blueberry-Mango-Yogurt.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Blueberry Mango Yoghurt</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫47,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫47,000</p>
+            </div>
+        </div>
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Cappuccino.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Cappuccino</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/cold-mocha-velvet-ice-black.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Mocha Velvet Ice</h2>
+                <p>₫87,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/cafe-lattejpg.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Cafe Latte</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Cafe-au-lait.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Cafe Au Lait</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-peach-Lemon-Tea.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Peach Lemon Tea</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-3">
+            <img src="images/drinks-green-Tea-Velvet-Ice-small.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Green Tea Velvet Ice</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫54,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫54,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/cold-ca-phe-sua-da.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Ca Phe Sua Da</h2>
+                <p>₫47,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-iced-tea-black-small.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Hot/Iced Tea</h2>
+                <p>₫39,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-green-Tea-Latte-small.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Green Tea Latte</h2>
+                <p>₫54,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫39,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Hot-brew.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Americano</h2>
+                <p>₫47,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫54,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Hot-Vienna-Creme.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Hot Vienna Creme</h2>
+                <p>₫74,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Vanilla-Velvet-Ice.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Vanilla Velvet Ice</h2>
+                <p>₫87,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫54,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/Espresso.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Cafe Au Lait</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-watermelon.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Watermelon</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫39,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-orange-Mango.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Orange Mango Smoothie</h2>
+                <p>₫74,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/granita-blackjpg.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Granita</h2>
+                <p>₫89,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-banana-apple-yogurt.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Banana Apple Yoghurt</h2>
+                <p>₫74,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-chocolate-milk.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Chocolate Milk</h2>
+                <p>₫59,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫39,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-2">
+
+            <div class="gallery-item-color">
+                <h2>Farve</h2>
+                <p>₫39,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-green-Tea-Tropics.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Green Tea Tropics</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-hot-Chocolate.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Hot Chocolate</h2>
+                <p>₫59,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-strawberry-banana.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Strawberry Banana Yoghurt</h2>
+                <p>₫74,000</p>
+            </div>
+        </div>
+
+        <div class="gallery-item gallery-2-item-1">
+            <img src="images/drinks-lemonade.jpg">
+
+            <div class="gallery-item-color">
+                <h2>Lemonade</h2>
+                <p>₫64,000</p>
+            </div>
+        </div>
+
+
+
     </div>
-
-</section>
-
-<section class="section-coffee-cold">
-
-</section>
-
-<section class="section-drinks">
 
 </section>
 
