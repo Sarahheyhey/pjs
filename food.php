@@ -1,3 +1,6 @@
+<!-- CASPER HAVELYKKE LARSEN -->
+
+
 <!doctype html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
@@ -10,29 +13,46 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Food - PJ's Coffee Vietnam</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <!-- Titel, description og keywords skal være forskellige på alle undersider -->
-
-    <meta property="og:title" content="titel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.domain.dk">
-    <meta property="og:image" content="https://www.domain.dk/img.jpg">
-    <meta property="og:description" content="Beskrivelse">
-    <meta property="og:locale" content="da_DK">
-
+    <meta name="author" content="PJ's Coffee Vietnam">
+    <meta name="copyright" content="Copyright PJ's Coffee Vietnam">
+    <meta name="description" content="Try our signature drink in
+    PJS's Coffee Vietnam. The Granita, an ice cold drink with a
+    crystaline texture. The perfect blend of coffee and ice.">
+    <meta name="keywords" content="PJs,PJ,Coffee,Vietnam,food,iced,coffee,">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+    <!-- Favicon der vises i fanen på browseren -->
+    <link rel="icon" href="images/favicon-logo.jpg">
+
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph -->
+    <!-- Navn på googles søgningsliste -->
+    <meta property="og:title" content="Food - PJ's Coffee Vietnam" >
+
+    <meta property="og:type" content="website" >
+
+    <meta property="og:url" content="https://pjscoffeevietnam.com/food.php" >
+
+    <meta property="og:image" content="https://pjscoffeevietnam.com/logo.png" >
+
+    <!-- Beskrivelse på Googles søgningsliste -->
+    <meta property="og:description" content="Try our signature drink in
+    PJS's Coffee Vietnam. The Granita, an ice cold drink with a
+    crystaline texture. The perfect blend of coffee and ice." >
+
+    <meta property="og:locale" content="en_US" >
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
 
@@ -48,19 +68,19 @@ require ("php/header.php")
 <ul class="aboutfaner">
 
     <li>
-        <a href="drinks.php" target="_self"> <h2>Drinks <b>| </b>  </h2> </a>
+        <a href="drinks.php" target="_self">Drinks <b>| </b></a>
     </li>
 
     <li>
-        <a href="food.php" target="_self"><h2 style="color: #e9bcf1">Food <b>| </b> </h2> </a>
+        <a href="food.php" style="color: #e9bcf1" target="_self">Food <b>| </b></a>
     </li>
 
     <li>
-        <a href="roasting.php" target="_self"><h2>Roasting <b>|</b> </h2> </a>
+        <a href="roasting.php" target="_self">Roasting <b>|</b></a>
     </li>
 
     <li>
-        <a href="merch.php" target="_self"><h2>Merchandise</h2> </a>
+        <a href="merch.php" target="_self">Merchandise </a>
     </li>
 
 
@@ -72,7 +92,7 @@ require ("php/header.php")
     <div class="grid-layout-food">
 
         <div class="gallery-item gallery-2-item-3">
-            <img src="images/Choco-swirl-cheesecake.jpg">
+            <img alt="PJ's Coffee's Choco Swirl Cheesecake" src="images/Choco-swirl-cheesecake.jpg">
 
             <div class="gallery-item-color">
                 <h2>Choco Swirl Cheesecake</h2>
@@ -81,7 +101,7 @@ require ("php/header.php")
         </div>
 
         <div class="gallery-item gallery-2-item-1">
-            <img src="images/Brownie.jpg">
+            <img alt="PJ's Coffee's Brownie" src="images/Brownie.jpg">
 
             <div class="gallery-item-color">
                 <h2>Brownie</h2>
@@ -91,22 +111,16 @@ require ("php/header.php")
 
         <div class="gallery-item gallery-2-item-2">
 
-            <div class="gallery-item-color">
-                <h2>Farve</h2>
-                <p>₫74,000</p>
-            </div>
+
         </div>
 
         <div class="gallery-item gallery-2-item-2">
 
-            <div class="gallery-item-color">
-                <h2>Farve</h2>
-                <p>₫39,000</p>
-            </div>
+
         </div>
 
         <div class="gallery-item gallery-2-item-1 Hot-brew">
-            <img src="images/New-Orleans-Bread-Pudding.jpg">
+            <img alt="PJ's Coffee's New Orleans Pudding" src="images/New-Orleans-Bread-Pudding.jpg">
 
             <div class="gallery-item-color">
                 <h2>New Orleans Bread Pudding</h2>
@@ -115,7 +129,7 @@ require ("php/header.php")
         </div>
 
         <div class="gallery-item gallery-2-item-1 Hot-Caramel-Creme">
-            <img src="images/Tiramisu.jpg">
+            <img alt="PJ's Coffee's Tiramisu" src="images/Tiramisu.jpg">
 
             <div class="gallery-item-color">
                 <h2>Tiramisu</h2>
@@ -124,7 +138,7 @@ require ("php/header.php")
         </div>
 
         <div class="gallery-item gallery-2-item-1">
-            <img src="images/Passion-Mousse.jpg">
+            <img alt="PJ's Coffee's Passion Mousse" src="images/Passion-Mousse.jpg">
 
             <div class="gallery-item-color">
                 <h2>Passion Mousse</h2>
@@ -133,7 +147,7 @@ require ("php/header.php")
         </div>
 
         <div class="gallery-item gallery-2-item-1 apple-Strawberry-Mint">
-            <img src="images/Muffin.jpg">
+            <img alt="PJ's Coffee's Ham, Cheese & Egg Muffin" src="images/Muffin.jpg">
 
             <div class="gallery-item-color">
                 <h2>Ham, Chesse & Egg Muffin</h2>
@@ -142,7 +156,7 @@ require ("php/header.php")
         </div>
 
         <div class="gallery-item gallery-2-item-1 Macchiato">
-            <img src="images/Meatloaf.jpg">
+            <img alt="PJ's Coffee's Meatloaf Panini" src="images/Meatloaf.jpg">
 
             <div class="gallery-item-color">
                 <h2>Meatloaf Panini</h2>

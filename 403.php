@@ -4,7 +4,7 @@
 <!doctype html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
-<html lang="da">
+<html lang="da" xmlns="http://www.w3.org/1999/html">
 
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
@@ -13,7 +13,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Merchandise - PJ's Coffee Vietnam</title>
+    <title>PJ's Coffee Vietnam - fresh coffee beans from America</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -22,10 +22,13 @@
     <meta name="description" content="Try our signature drink in
     PJS's Coffee Vietnam. The Granita, an ice cold drink with a
     crystaline texture. The perfect blend of coffee and ice.">
-    <meta name="keywords" content="PJs,PJ,Coffee,Vietnam,merch,iced,merchandise,">
+    <meta name="keywords" content="PJs,PJ,Coffee,Vietnam,Granita,iced,coffee,">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicon der vises i fanen på browseren -->
+    <link rel="icon" href="images/favicon-logo.jpg">
 
     <!-- Favicon der vises i fanen på browseren -->
     <link rel="icon" href="images/favicon-logo.jpg">
@@ -35,11 +38,12 @@
 
     <!-- Open Graph -->
     <!-- Navn på googles søgningsliste -->
-    <meta property="og:title" content="Merchandise - PJ's Coffee Vietnam" >
+    <meta property="og:title" content="PJ's Coffee Vietnam -
+    fresh coffee beans from America" >
 
     <meta property="og:type" content="website" >
 
-    <meta property="og:url" content="https://pjscoffeevietnam.com/merch.php" >
+    <meta property="og:url" content="https://pjscoffeevietnam.com/" >
 
     <meta property="og:image" content="https://pjscoffeevietnam.com/logo.png" >
 
@@ -63,73 +67,15 @@
 require ("php/header.php")
 ?>
 
-<h1>Our Menu</h1>
+<section class="main-403">
 
-<ul class="aboutfaner">
+    <img alt="403 - No access" src="images/403-img.png">
 
-    <li>
-        <a href="drinks.php" target="_self">Drinks <b>|</b></a>
-    </li>
+    <h1>403 - No access :(</h1>
 
-    <li>
-        <a href="food.php" target="_self">Food <b>| </b></a>
-    </li>
-
-    <li>
-        <a href="roasting.php" target="_self">Roasting <b>| </b></a>
-    </li>
-
-    <li>
-        <a href="merch.php" style="color: #e9bcf1" target="_self">Merchandise</a>
-    </li>
-
-</ul>
-
-
-<section class="section-beverages-all">
-
-    <div class="grid-layout-merch">
-
-        <div class="gallery-item gallery-2-item-3">
-            <img alt="PJ's Coffee's Umbrella" src="images/merch-umbrella.jpg">
-
-            <div class="gallery-item-color">
-                <h2>PJ's Umbrella</h2>
-                <p>₫495,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-2-item-3">
-            <img alt="PJ's Coffee's KeepCup" src="images/merch-KeepCup.jpg">
-
-            <div class="gallery-item-color">
-                <h2>PJ' KeepCup</h2>
-                <p>₫450,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-2-item-3">
-            <img alt="PJ's Coffee's Bamboo Straw" src="images/merch-bamboo-straw.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Bamboo Straw</h2>
-                <p>₫50,000</p>
-            </div>
-        </div>
-
-        <div class="gallery-item gallery-2-item-3">
-            <img alt="PJ's Coffee's Glass Bottle" src="images/merch-glass-bottle.jpg">
-
-            <div class="gallery-item-color">
-                <h2>Glass Bottle</h2>
-                <p>₫400,000</p>
-            </div>
-        </div>
-
-    </div>
+    <a href="index.php"><button>Return to front page</button></a>
 
 </section>
-
 
 <?php
 require ("php/footer.php")

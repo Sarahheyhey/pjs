@@ -16,7 +16,9 @@
 <meta name="robots" content="All">
 <meta name="author" content="Udgiver">
 <meta name="copyright" content="Information om copyright">
-<meta name="description" content="Free Web tutorials">
+<meta name="description" content="Try our signature drink in
+PJS's Coffee Vietnam. The Granita, an ice cold drink with a
+crystaline texture. The perfect blend of coffee and ice.">
 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 
 <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
@@ -25,25 +27,50 @@
 <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta property="og:title" content="titel" >
+<!-- Open Graph -->
+    <!-- Navn på googles søgningsliste -->
+<meta property="og:title" content="PJ's Coffee Vietnam -
+fresh coffee beans from America" >
 
 <meta property="og:type" content="website" >
 
-<meta property="og:url" content="http://www.domain.dk" >
+<meta property="og:url" content="https://pjscoffeevietnam.com/" >
 
-<meta property="og:image" content="https://www.domain.dk/img.jpg" >
+<meta property="og:image" content="https://pjscoffeevietnam.com/logo.png" >
 
-<meta property="og:description" content="Beskrivelse" >
+    <!-- Beskrivelse på Googles søgningsliste -->
+<meta property="og:description" content="Try our signature drink in
+PJS's Coffee Vietnam. The Granita, an ice cold drink with a
+crystaline texture. The perfect blend of coffee and ice." >
 
-<meta property="og:locale" content="da_DK" >
+<meta property="og:locale" content="en_US" >
 
+<!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<?php
+require ("php/header.php")
+?>
 
+<h1>Our Menu</h1>
+
+<a href="drinks.php">Drinks</a>
+
+<a href="food.php">Food</a>
+
+<a href="roasting.php">Roasting</a>
+
+<a href="merch.php">Merchandise</a>
+
+<?php
+require ("php/footer.php")
+?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

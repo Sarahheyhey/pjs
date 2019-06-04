@@ -5,6 +5,8 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
+// CASPER & SARAH
+
 $lilla:  #6a2976;
 $lillaTrans: rgba(106, 41, 118, 0.5);
 $lyslilla: #e9bcf1;
@@ -14,6 +16,9 @@ $brunTrans: rgba(62, 37, 22, 0.5);
 $sort: #000000;
 $hvid: #ffffff;
 $graa: #666666;
+
+$content-width: calc(50vw - 100px);
+$content-width-mobil: 75vw;
 
 @mixin sidemarginer{
   margin: 0 20px;
@@ -64,8 +69,6 @@ p {
   color: $graa;
   @include sidemarginer;
 }
-
-
 
 a{
   text-decoration: none;
@@ -127,6 +130,13 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+b{
+  color: $brun;
+}
+
+// CASPER & SARAH SLUT
+
+//SARAH HOFMANN_______________________________________________
 .aboutfaner{
   display: inline-block;
   width: 100%;
@@ -134,15 +144,127 @@ img {
   text-align: center;
   margin-bottom: 30px;
 
+  a {
+    font-size: 14pt;
+  }
 }
+//SARAH HOFMANN SLUT_________________________________________
 
 
 
-b{
-  color: $brun;
+
+
+//CASPER HAVELYKKE LARSEN______________________________________
+
+.timeline{
+
+
+  ul{
+    padding: 50px 0;
+    list-style-position: outside;
+
+    li{
+      display: block;
+      background: $lilla;
+      position: relative;
+      margin: 0 auto;
+      width: 5px;
+      margin-left: 5vw;
+
+      padding-bottom: 40px;
+      list-style-type: none;
+
+      &:last-child{
+        padding-bottom: 7px;
+      }
+
+      &:before{
+        content: '';
+        background: $lilla;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+      .hidden {
+        opacity: 0;
+      }
+
+      .content{
+        background: $lilla;
+        position: relative;
+        top: 7px;
+        width: $content-width-mobil;
+        padding: 2px;
+
+        h2{
+          padding: 10px 20px;
+          text-align: center;
+        }
+
+        p {
+          text-align: left;
+          padding: 0 10px;
+          margin: 5px 0 10px 0;
+        }
+
+        .image-container {
+          position: relative;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &:before{
+          content: '';
+          background: $lilla;
+          position: absolute;
+          top: 0;
+          width: 38px;
+          height: 5px;
+        }
+      }
+
+      &:nth-child(odd) .content {
+        left: 50px;
+        background: white;
+        //background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+        //background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+        box-shadow:0 0 0 2px $lilla inset;
+      }
+
+      &:nth-child(odd) .content:before {
+        left: -38px;
+      }
+
+      &:nth-child(even) .content {
+        left: 50px;
+        background: white;
+        //background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+        //background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+        box-shadow:0 0 0 2px $lilla inset;
+      }
+
+      &:nth-child(even) .content:before {
+        left: -38px;
+      }
+    }
+  }
 }
+// CASPER HAVELYKKE LARSEN SLUT_________________________________________
 
 
+
+//SARAH HOFMANN_______________________________________________
 .about1billede{
   margin-bottom: 20px;
 }
@@ -235,6 +357,9 @@ b{
   margin-top: 20px;
 }
 
+.beans1text {
+  margin: 0 1vw;
+}
 
 .beans2text{
 
@@ -244,18 +369,21 @@ b{
 }
 
 .carrerstext{
-
+  p {
+    text-align: left;
+  }
 }
 
 .carrerindhold{
-width: 100%;
+  width: 100%;
   height: auto;
   justify-content: center;
 }
 
 .carrers1indhold{
   margin-top: 25px;
-  height: 450px;
+  padding-bottom: 25px;
+  height: auto;
   background-color: $lilla;
 
 }
@@ -295,7 +423,8 @@ width: 100%;
 
 .carrers2indhold{
   margin-top: 25px;
-  height: 450px;
+  padding-bottom: 25px;
+  height: auto;
   background-color: $lilla;
 
 }
@@ -349,8 +478,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: $orange;
-  text-align: center;
-  cursor: pointer;
   border: 1px solid $orange;
   text-decoration-color: $hvid;
   width: auto;
@@ -377,17 +504,18 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+//SARAH HOFMANN SLUT________________________________________________
 
 
-
-#blogs {
+//CASPER HAVELYKKE LARSEN____________________________________________
+.blogs {
   @include sidemarginer;
   display: grid;
 }
 
 .blogindlaeg-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
 }
 
 .blogindlaeg {
@@ -409,6 +537,7 @@ button:active {
   p {
     color: $lilla;
     margin-top: 5px;
+    text-align: left;
   }
 
   a {
@@ -480,6 +609,11 @@ button:active {
   padding: 10px;
   margin: 30px auto 0 auto;
   grid-auto-flow: dense;
+  p {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 }
 
 .grid-layout-merch {
@@ -561,6 +695,7 @@ button:active {
 
 
 header {
+  z-index: 1000;
   background-color: white;
   display: grid;
   height: 90px;
@@ -569,16 +704,24 @@ header {
   grid-template-columns: 30% auto 30%;
 }
 
+.logo-mobile-container {
+  display: flex;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+  width: 100%;
+  height: 86px;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo-mobile {
   z-index: 10;
   display: flex;
   width: 150px;
   margin: 0 auto;
-  grid-row: 1 / span 2;
-  position: absolute;
-  justify-self: center;
-  align-self: center;
 }
+
+
 
 .logo-web {
   display: none;
@@ -612,6 +755,10 @@ nav {
     display: none;
   }
 
+  .toggle-about, [id^=sub-drop] {
+    display: none;
+  }
+
   .toggle {
     display: block;
     text-decoration: none;
@@ -619,6 +766,14 @@ nav {
     width: 30px;
     float: right;
     margin: 35px 10% 0 0;
+  }
+
+  .toggle-about{
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    margin:0 0;
   }
 
   .toggle:hover {
@@ -637,21 +792,40 @@ nav {
     margin: 0;
     display: inline-block;
     width: 100%;
+
+
   }
 
-  a {
+  a, h2{
     display: block;
     padding: 14px 7vw;
     font-size: 21pt;
     text-decoration: none;
     font-family: "Open Sans";
-
   }
 
   ul ul {
     display: none;
     position: absolute;
     top: 25px;
+  }
+
+  .menu-about{
+    background-color: white;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .menu-our-menu {
+    background-color: white;
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .menu-blog {
+    background-color: white;
+    width: 100%;
+    margin-top: 200px;
   }
 
 }
@@ -663,6 +837,30 @@ nav {
 .sprog-header {
   display: none;
 }
+
+.main-404, .main-403 {
+  display: grid;
+  padding: 70px 15px;
+  margin: 0 15px;
+
+  a {
+    text-align: center;
+  }
+
+  img {
+    height: 300px;
+    justify-self: center;
+  }
+
+  button{
+    @include buttionMobile;
+    font-size: 14pt;
+    margin-top: 30px;
+  }
+
+}
+
+
 
 footer {
   height: auto;
@@ -750,14 +948,114 @@ footer {
   }
 }
 
-
-
-.indexgallerioverskrift{
-  align-items: center;
+.slideshow-index{
   width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+}
+
+.videoSlideshowcontainer {
+  width: 100%;
+  position: absolute;
+  height: 50vw;
+}
+
+.videoSlideshow {
+  display: none;
+  height: 50vw;
+}
+
+.naeste, .forrige {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $lilla;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.naeste {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.forrige:hover, .naeste:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.videoSlideNumbertext {
+  color: $hvid;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.responsive-video {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
 
 }
 
+.responsive-video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
+
+.videoSlideText {
+  display: grid;
+  position: absolute;
+  color: white;
+  width: 100%;
+  align-self: center;
+  justify-self: right;
+
+  p {
+    color: white;
+  }
+
+  button {
+    padding: 3vw 4vw;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+}
+// CASPER HAVELYKKE LARSEN SLUT_______________________________________
+
+
+//SARAH HOFMANN_______________________________________________
 .indexgalleriknap{
   justify-items: center;
   display: flex;
@@ -781,12 +1079,9 @@ footer {
   text-decoration-color: $hvid;
   width: auto;
 
-
-
   p{
     text-decoration: none;
   }
-
 
   button:hover,
   button:focus {
@@ -803,49 +1098,44 @@ footer {
     transform: scale(0.99);
   }
 
-
-
 }
 
 
 .indexbilleder{
-  height: auto;
-  width: auto;
   display: flex;
+  height: auto;
+  width: 100%;
   flex-direction: column;
-  justify-content: space-between;
-  width: auto;
-  margin-right: 20px;
-
+  justify-content: center;
 }
+
 .indexbillederoverst{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: center;
 
   img{
-    width: 48%;
-    height: 200px;
+    height: 49vw;
+    width: 50%;
   }
+}
 
+.indexbilledernederst{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img{
+    width: 50%;
+    height: 49vw;
+  }
 }
 
 .indexgalleritext{
   margin-left: 20px;
 }
 
-.indexbilledernederst{
 
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-
-  img{
-    width: 48%;
-    height: 200px;
-  }
-
-}
 
 .indexgalleritext1{
   margin-top: 20px;
@@ -856,9 +1146,10 @@ footer {
   margin-top: 25px;
 }
 
+
 .videovideo{
-  width: 100%;
-  height: 250px;
+  height: 54vw;
+
   iframe{
     width: 100%;
     height: 100%;
@@ -869,11 +1160,10 @@ footer {
   height: 400px;
   width: 100%;
   background-image: url("../images/nhyedsbrevbaggrund.png");
-  background-repeat: repeat-x;
   background-size: 100% 400px;
   background-position: center;
   margin-top: 20px;
-  
+
   
 }
 
@@ -913,15 +1203,15 @@ form{
   }
 }
 
-input{
-  
-  background-color: $hvid;  
+input {
+
+  background-color: $hvid;
   width: 100%;
   height: auto;
   padding: 5px;
   border: none;
   text-decoration-color: $lilla;
-
+}
 
 
    p{                                      
@@ -944,11 +1234,53 @@ input{
   }
 
 }
+//SARAH HOFMANN SLUT_____________________________________________
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
+  //CASPER HAVELYKKE LARSEN__________________________________________
+  .timeline ul li {
+    margin: 0 auto;
 
+    .content {
+      width: 41vw;
+    }
+
+
+
+    &:nth-child(even) .content:before {
+      left: auto;
+      right: -38px;
+    }
+
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+
+  .blogindlaeg-container {
+    grid-template-columns: repeat(auto-fit, 49%);
+    grid-gap: 10px;
+
+  }
+
+  .videoSlideText {
+
+    width: 50%;
+    justify-self: right;
+
+    h1{
+      font-size: 30pt;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 2vw 3vw;
+    }
+  }
+  //CASPER HAVELYKKE LARSEN________________________________________
 
 
 }
@@ -956,85 +1288,10 @@ input{
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 
-  .videovideo{
-    height: 500px;
-    margin-bottom: 100px;
+  //CASPER HAVELYKKE LARSEN______________________________________
+  h3 {
+    font-size: 10pt;
   }
-
-  .newstext{
-    margin-right: 70px;
-    margin-left: 70px;
-    margin-bottom: 10px;
-  }
-
-  .newsletter{
-    
-    width: 100vw;
-    background-size: 100% 400px;
-    margin-left: -183px;
-
-    p{
-      margin-right: 90px;
-      margin-left: 90px;
-      margin-bottom: -10px;
-    }
-
-    form{
-      margin-top: 20px;
-    }
-    
-  }
-
-
- .newsoverskrift{
-
-
-   h1{
-     margin-bottom: 20px;
-   }
- }
-
-  .indexbillederoverst{
-
-    height: auto;
-
-  }
-
-  .indexbilledernederst{
-
-    height: auto;
-
-  }
-
-.indexcontent{
-  margin-right: 183px;
-  margin-left: 183px;
-
-}
-
-.indexgalleritext{
-
-  flex-direction: row;
-}
-
-
-.indexcontent{
-  flex-direction: row;
-}
-
-.indexgalleri{
-  display: flex;
-  flex-direction: row;
-}
-  .indexgalleri{
-
-  }
-
-.indexgallerioverskrift{
-  margin-top: 100px;
-}
-
-
 
   h1{
     font-family: 'Archer Bold';
@@ -1058,20 +1315,130 @@ input{
     font-size: 12pt;
   }
 
-
   @mixin websidemargin{
     margin-left: 183px;
     margin-right: 183px;
   }
 
+  .timeline ul li .content {
+
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+  //CASPER HAVELYKKE LARSEN SLUT__________________________________
+
+
+  // SARAH HOFMANN________________________________________________
+  .video{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .videovideo{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+
+    iframe {
+      height: 500px;
+      width: 889px;
+    }
+  }
+
+  .newstext{
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+
+
+
+  .newsletter{
+    
+    width: 100vw;
+    height: 450px;
+    background-size: 100% 450px;
+
+    p{
+      margin-right: 90px;
+      margin-left: 90px;
+      margin-bottom: -10px;
+    }
+
+    form{
+      margin-top: 20px;
+    }
+    
+  }
+
+
+ .newsoverskrift{
+
+
+   h1{
+     margin-bottom: 20px;
+   }
+ }
+
+  .indexbillederoverst{
+    height: auto;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .indexbilledernederst{
+    height: auto;
+
+    img{
+      height: 100%;
+    }
+
+  }
+
+
+.indexgalleritext{
+
+  flex-direction: row;
+}
+
+.indexgalleri{
+  display: flex;
+  margin: 0 183px;
+  flex-direction: column;
+  justify-content: normal;
+}
+
+  .indexgalleriogtext {
+    display: flex;
+    flex-direction: row;
+  }
+
+.indexgallerioverskrift{
+  margin-top: 100px;
+  width: 100%;
+  justify-content: normal;
+}
+
+  //SARAH HOFMANN SLUT__________________________________________
+
+
+
+
+  // CASPER HAVELYKKE LARSEN_____________________________________
   #worldmap {
     width: 100%;
     height: 500px;
 
   }
+  // CASPER HAVELYKKE LARSEN SLUT__________________________________
 
 
-
+  // SARAH HOFMANN_________________________________________________
 .about1billede{
   width: 50%;
   height: 300px;
@@ -1095,11 +1462,12 @@ input{
   width: 100%;
   padding-top: 20px;
 }
+
   .aboutone{
     display: block;
     width: 50%;
-
   }
+
  .aboutone{
    
  }
@@ -1163,7 +1531,6 @@ input{
       max-width: 500px;
       display: flex;
       position: absolute;
-
     }
   }
 
@@ -1220,7 +1587,14 @@ input{
   @include websidemargin
 }
 
+  .beans1text {
+    margin: 0 183px;
+  }
 
+  // SARAH HOFMANN SLUT___________________________________________
+
+
+  // CASPER HAVELYKKE LARSEN______________________________________
   header {
     display: grid;
     grid-template-columns: 20% 30% 40% 10%;
@@ -1236,6 +1610,7 @@ input{
   }
 
   .logo-web {
+    z-index: 10;
     display: grid;
     grid-column: 1 / span 1;
     position: absolute;
@@ -1266,6 +1641,42 @@ input{
     }
   }
 
+  .header-menu-menu {
+  }
+
+
+  .header-menu-menu-content, .header-menu-about-content, .header-menu-blog-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+    .menuHrLinje {
+      color: $lilla;
+      margin: 15px 0;
+    }
+
+    a {
+      font-family: "Open Sans";
+      font-size: 11pt;
+    }
+  }
+
+  .header-menu-menu:hover .header-menu-menu-content {
+    display: block;
+  }
+
+  .header-menu-about:hover .header-menu-about-content {
+    display: block;
+  }
+
+  .header-menu-blog:hover .header-menu-blog-content {
+    display: block;
+  }
+
   .sprog-header {
     display: inline-flex;
     grid-row: 1 / span 1;
@@ -1276,10 +1687,10 @@ input{
     justify-content: space-between;
     padding-top: 15px;
   }
+  // CASPER HAVELYKKE LARSEN SLUT____________________________________
 
-  #blogs {
 
-
+  // SARAH HOFMANN__________________________________________________
 .carrerstext{
   @include websidemargin;
 }
@@ -1287,7 +1698,6 @@ input{
   .carreroverst{
     display: flex;
     justify-content: space-between;
-
   }
 
 
@@ -1336,8 +1746,8 @@ input{
     margin-left: 20px;
   }
 
-
 }
+
   .carrerindhold{
     @include websidemargin;
   }
@@ -1355,27 +1765,21 @@ input{
   .carreroverst{
     margin-bottom: 50px;
   }
+  // SARAH HOFMANN SLUT____________________________________________
 
 
-
-
-  }
-
+  // CASPER HAVELYKKE LARSEN__________________________________________
   .blogindlaeg-container {
-    display: block;
-    overflow: auto;
-    height: 100vh;
-    width: 100%;
-    white-space: nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 32%);
+    grid-gap: 10px;
   }
 
   .blogindlaeg {
-    display: inline-block;
-    border: 3px solid $lilla;
-    width: 400px;
+    border: 2px solid $lilla;
+    width: 100%;
     height: auto;
     margin: 20px 20px;
-    white-space: normal;
 
     h2 {
       text-align: center;
@@ -1407,14 +1811,6 @@ input{
     }
   }
 
-  .kalender {
-    height: 765px;
-  }
-
-  .kalender_kalender {
-    justify-items: center;
-    width: 98vw;
-  }
 
   .grid-layout {
     display: grid;
@@ -1475,6 +1871,11 @@ input{
     padding: 10px;
     margin: 30px auto 0 auto;
     grid-auto-flow: dense;
+    p {
+      font-size: 18pt;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
   }
 
   .grid-layout-merch {
@@ -1517,6 +1918,40 @@ input{
   .apple-Strawberry-Mint {
     grid-area: 3 / 7 / span 2 / span 2;
   }
+
+
+
+  .slideshow-index{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 46vw;
+  }
+
+  .videoSlideshowcontainer {
+    width: 100%;
+    position: absolute;
+    height: 46vw;
+  }
+
+  .videoSlideshow {
+    display: none;
+    height: 46vw;
+  }
+
+  .videoSlideText {
+
+    h1 {
+      font-size: 46pt;
+    }
+
+
+    button {
+      padding: 1rem 2rem;
+    }
+  }
+
+
 
   footer {
     height: auto;
@@ -1591,15 +2026,18 @@ input{
     grid-row: 4 / span 1;
     grid-column: 1 / span 8;
   }
+  //CASPER HAVELYKKE LARSEN SLUT_______________________________________
 
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  //CASPER HAVELYKKE LARSEN____________________________________________
   header {
     grid-template-columns: 20% 40% 30% 10%;
-
   }
+  // CASPER HAVELYKKE LARSEN SLUT_________________________________________
 
 }
 

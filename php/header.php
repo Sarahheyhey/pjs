@@ -1,12 +1,14 @@
 
 <header>
 
-    <div class="logo-mobile">
-        <a href="index.php"><img src="images/pjs_logo_mobile.png"></a>
-    </div>
+    <div class="logo-mobile-container">
+         <div class="logo-mobile">
+            <a href="index.php"><img alt="PJ's Coffee's Logo" src="images/pjs_logo_mobile.png"></a>
+         </div>
+     </div>
 
     <div class="logo-web">
-        <a href="index.php"><img src="images/logo.png"></a>
+        <a href="index.php"><img alt="PJ's Coffee's Logo" src="images/logo.png"></a>
     </div>
 
 
@@ -19,20 +21,83 @@
         <input type="checkbox" id="drop" />
 
         <ul class="menu">
-
             <li>
-                <a href="aboutushistory.php">About Us <i class="fas fa-chevron-down"></i></a>
+                <label for="sub-drop" class="toggle-about">
+                    <h2>About Us <i class="fas fa-chevron-down"></i></h2>
+                </label>
+                <input type="checkbox" id="sub-drop" />
+
+                <ul class="menu-about">
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="aboutushistory.php">History</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="aboutusbeans.php">Beans</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="aboutuscareers.php">Careers</a>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                    </li>
+                </ul>
             </li>
 
             <li>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="ourmenu.php">Our Menu <i class="fas fa-chevron-down"></i></a>
+                <label for="sub-drop" class="toggle-our-menu">
+                    <h2>Our Menu <i class="fas fa-chevron-down"></i></h2>
+                </label>
+                <input type="checkbox" id="sub-drop" />
+
+                <ul class="menu-our-menu">
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="drinks.php">Drinks</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="food.php">Food</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="roasting.php">Roasting</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="Merch.php">Merchandise</a>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                    </li>
+                </ul>
             </li>
 
             <li>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
-                <a href="blog.php">Blog & Events <i class="fas fa-chevron-down"></i></a>
+                <label for="sub-drop" class="toggle-blog">
+                    <h2>Blog & Events <i class="fas fa-chevron-down"></i></h2>
+                </label>
                 <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+
+                <input type="checkbox" id="sub-drop" />
+
+                <ul class="menu-blog">
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="blog.php">Blogs</a>
+                    </li>
+
+                    <li>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                        <a href="events.php">Events</a>
+                        <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
@@ -40,17 +105,48 @@
 
     <div class="header-menu">
 
-        <h2><a href="ourmenu.php">Our Menu <i class="fas fa-chevron-down"></i></a></h2>
+        <div class="header-menu-menu">
+            <h2>Our Menu <i class="fas fa-chevron-down"></i></h2>
 
-        <h2><a href="aboutushistory.php">About Us <i class="fas fa-chevron-down"></i></a></h2>
+            <div class="header-menu-menu-content">
+                <h2><a href="drinks.php">Drinks</i></a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="food.php">Food</i></a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="roasting.php">Roasting</a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="merch.php">Merchandise</a></h2>
+            </div>
 
-        <h2><a href="blog.php">Blog & Events <i class="fas fa-chevron-down"></i></a></h2>
+        </div>
+
+        <div class="header-menu-about">
+            <h2>About Us <i class="fas fa-chevron-down"></i></h2>
+
+            <div class="header-menu-about-content">
+                <h2><a href="aboutushistory.php">History</i></a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="aboutusbeans.php">Beans</i></a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="aboutuscareers.php">Careers</i></a></h2>
+            </div>
+        </div>
+
+        <div class="header-menu-blog">
+            <h2>Blog & Events <i class="fas fa-chevron-down"></i></h2>
+
+            <div class="header-menu-blog-content">
+                <h2><a href="blog.php">Blogs</i></a></h2>
+                <hr class="menuHrLinje" noshade="noshade" style="width: 90%;">
+                <h2><a href="events.php">Events</i></a></h2>
+            </div>
+        </div>
 
     </div>
 
     <div class="sprog-header">
-        <a href="#"><img src="images/en.png"></a>
-        <a href="#"><img src="images/vi.png"></a>
+        <a href="#"><img alt="Language English" src="images/en.png"></a>
+        <a href="#"><img alt="Language Vietnamese" src="images/vi.png"></a>
     </div>
 
 </header>
@@ -59,5 +155,19 @@
 <script>
     $('.toggle').click(function () {
         $('.menu').toggle("slow")
-    })
+    });
+
+    $('.toggle-about').click(function () {
+        $('.menu-about').toggle("slow")
+    });
+
+    $('.toggle-our-menu').click(function () {
+        $('.menu-our-menu').toggle("slow")
+    });
+
+    $('.toggle-blog').click(function () {
+        $('.menu-blog').toggle("slow")
+    });
 </script>
+
+<main>
