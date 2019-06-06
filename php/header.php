@@ -15,9 +15,8 @@
     <nav>
 
         <label for="drop" class="toggle">
-            <img src="images/Burger.png" alt="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 31"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill:#6a2976;}</style></defs><title>Menu</title><g id="Layer_2" data-name="Layer 2"><g id="Rectangle_1" data-name="Rectangle 1" class="cls-1"><g id="Rectangle_1-2" data-name="Rectangle 1"><rect class="cls-2" width="52" height="5"/></g></g><g id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1"><g id="Rectangle_1_copy-2" data-name="Rectangle 1 copy"><rect class="cls-2" y="13" width="52" height="5"/></g></g><g id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-1"><g id="Rectangle_1_copy_2-2" data-name="Rectangle 1 copy 2"><rect class="cls-2" y="26" width="52" height="5"/></g></g></g></svg>
         </label>
-
         <input type="checkbox" id="drop" />
 
         <ul class="menu">
