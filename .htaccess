@@ -1,2 +1,13 @@
 ErrorDocument 403 /403.php
 ErrorDocument 404 /404.php
+
+RewriteEngine on
+RewriteRule ^drinks drinks.php
+RewriteRule ^food food.php
+RewriteRule ^roasting roasting.php
+RewriteRule ^merch merch.php
+RewriteRule ^history aboutushistory.php
+RewriteRule ^beans aboutusbeans.php
+RewriteRule ^careers aboutuscareers.php
+RewriteRule ^blogs blog.php
+RewriteRule ^events events.php

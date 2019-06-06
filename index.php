@@ -68,24 +68,24 @@
 
         <div class="videoSlideshow fade">
 
-            <div class="videoSlideNumbertext">1 / 2</div>
 
             <div class="responsive-video">
                 <img alt="PJ's Coffee's Granitas are made with lots
                 of love and affection" src="images/granita-index-2.jpg">
             </div>
 
-            <div class="videoSlideText">
-                <h1 style="color:#6a2976">You Know You <br> Want It!</h1>
-                <br>
-                <button>Check out our Granitas</button>
+            <div class="videoSlideTextContainer">
+                <div class="videoSlideText">
+                    <h1 style="color:#6a2976">You Know You <br> Want It!</h1>
+                    <br>
+                    <button><a href="drinks.php">Check out our Granitas</a></button>
+                </div>
             </div>
 
         </div>
 
         <div class="videoSlideshow fade">
 
-            <div class="videoSlideNumbertext">2 / 2</div>
 
             <div class="responsive-video">
                 <img alt="Plastic straws are bad for the envirionment.
@@ -93,13 +93,15 @@
                     and ofther plastics" src="images/stop-plastic-straws.jpg">
             </div>
 
-            <div class="videoSlideText">
-                <h1 style="color:White">Why you should stop
-                    using plastic straws today!</h1>
-                <br>
-                <p>Read our blog and help keep the
-                    environment clean</p>
-                <button>Read it Now</button>
+            <div class="videoSlideTextContainer2">
+                <div class="videoSlideText">
+                    <h1 style="color:White">Why you should stop
+                        using plastic straws</h1>
+                    <br>
+                    <p>Read our blog and help keep the
+                        environment clean</p>
+                    <button><a href="blog.php">Read it Now</a></button>
+                </div>
             </div>
 
         </div>
@@ -151,7 +153,7 @@
 
     </div>
 
-    <button class="newsknap"><p style="color: white">Join The Club</p> </button>
+    <button class="newsknap"><h2>Join The Club</h2> </button>
 
 </section>
 
@@ -197,9 +199,7 @@
 
 
             <button class="indexgalleriknap">
-
-
-                <a href="products.php"><p style="color: white">Check It Out</p></a>
+                <a href="drinks.php"><h2>Check It Out</2></a>
             </button>
 
             <br>

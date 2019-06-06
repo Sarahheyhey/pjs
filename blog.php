@@ -94,7 +94,6 @@
             <p>When you think of a straw, you usually think of the small plastic tube that conveniently comes
                 along with your drink most of the time. However, such small piece of utensil has a huge
                 negative impact on the environment. Plastic is designed to last forever, but a single...</p>
-
             <a href="#"><button class="blog-knap"><h2>Read It Now</h2></button></a>
         </div>
 

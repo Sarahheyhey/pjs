@@ -203,6 +203,8 @@ b{
         top: 7px;
         width: $content-width-mobil;
         padding: 2px;
+        justify-content: center;
+
 
         h2{
           padding: 10px 20px;
@@ -221,6 +223,21 @@ b{
 
           img {
             width: 100%;
+          }
+
+
+        }
+
+        button {
+          margin: 15px 15px;
+        }
+
+        .events-knap {
+
+          h2 {
+            margin: 0;
+            padding: 0;
+            color: white;
           }
         }
 
@@ -260,6 +277,8 @@ b{
     }
   }
 }
+
+
 // CASPER HAVELYKKE LARSEN SLUT_________________________________________
 
 
@@ -552,6 +571,7 @@ button:active {
 
   h2{
     margin: 0;
+    color: white;
   }
 }
 
@@ -609,6 +629,7 @@ button:active {
   padding: 10px;
   margin: 30px auto 0 auto;
   grid-auto-flow: dense;
+
   p {
     font-size: 5vw;
     font-weight: bold;
@@ -630,7 +651,7 @@ button:active {
 .gallery-item {
   display: flex;
   overflow: hidden;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
 
   img {
@@ -641,24 +662,27 @@ button:active {
 
 .gallery-item-color{
   display: grid;
-  z-index: 10;
   background-color: $lillaTrans;
+  z-index: 8;
   opacity: 0;
   transition: .5s ease;
   height: 100%;
   width: 100%;
   text-align: center;
   align-items: end;
-  padding-bottom: 2vw;
+  padding: 2vw;
 
   p{
     color: white;
+    font-size: 14pt;
+
   }
 
   h2{
     color: white;
     margin: 0;
     padding: 0;
+    font-size: 18pt;
   }
 }
 
@@ -728,7 +752,7 @@ header {
 }
 
 nav {
-  z-index: 5;
+  z-index: 9;
   grid-row: 1 / span 2;
   grid-column: 1 / span 3;
   width: 100%;
@@ -895,6 +919,11 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 0 10%;
+
+  a {
+    color: $orange;
+    text-decoration: underline;
+  }
 }
 
 .some-footer {
@@ -922,6 +951,10 @@ footer {
   h2 {
     color: $orange;
   }
+
+  a{
+    color: $orange;
+  }
 }
 
 .vincom-store-location {
@@ -934,6 +967,10 @@ footer {
   h2 {
     color: $orange;
   }
+
+  a{
+    color: $orange;
+  }
 }
 
 .bis-store-location {
@@ -944,6 +981,10 @@ footer {
   padding: 0 10%;
 
   h2 {
+    color: $orange;
+  }
+
+  a{
     color: $orange;
   }
 }
@@ -1031,13 +1072,26 @@ footer {
   width: 100%;
   }
 
-.videoSlideText {
+.videoSlideTextContainer {
   display: grid;
   position: absolute;
+  width: 100%;
+  padding-top: 2%;
+
+}
+
+.videoSlideTextContainer2 {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  padding-top: 2%;
+
+}
+
+.videoSlideText {
+  display: grid;
   color: white;
   width: 100%;
-  align-self: center;
-  justify-self: right;
 
   p {
     color: white;
@@ -1045,6 +1099,15 @@ footer {
 
   button {
     padding: 3vw 4vw;
+
+    a {
+      color: white;
+    }
+  }
+
+  button:hover {
+    background-color: $lilla;
+
   }
 
   h1 {
@@ -1079,8 +1142,8 @@ footer {
   text-decoration-color: $hvid;
   width: auto;
 
-  p{
-    text-decoration: none;
+  a{
+    color: white;
   }
 
   button:hover,
@@ -1163,7 +1226,6 @@ footer {
   background-size: 100% 400px;
   background-position: center;
   margin-top: 20px;
-
   
 }
 
@@ -1176,7 +1238,10 @@ footer {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
- 
+
+  h2 {
+    color: white;
+  }
 }
 
 .newsform{
@@ -1266,17 +1331,35 @@ input {
 
   }
 
-  .videoSlideText {
+  .videoSlideTextContainer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 8%;
+  }
 
+  .videoSlideTextContainer2 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: left;
+    padding-top: 8%;
+    padding-left: 2%;
+
+  }
+
+  .videoSlideText {
     width: 50%;
-    justify-self: right;
+    height: 100%;
 
     h1{
       font-size: 30pt;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     button {
+      margin-top: 15px;
       padding: 2vw 3vw;
     }
   }
@@ -1830,7 +1913,6 @@ input {
 
     img {
       position: absolute;
-      width: 100%;
     }
   }
 
@@ -1845,7 +1927,7 @@ input {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(19, 120px);
     grid-gap: 10px;
-    width: 1070px;
+    width: 975px;
     padding: 10px;
     margin: 30px auto 0 auto;
     grid-auto-flow: dense;
@@ -1856,21 +1938,28 @@ input {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 120px);
     grid-gap: 10px;
-    width: 1070px;
+    width: 975px;
     padding: 10px;
     margin: 30px auto 0 auto;
     grid-auto-flow: dense;
+
+    img {
+      width: auto;
+      max-width: none;
+      max-height: 100%;
+    }
   }
 
   .grid-layout-roasting {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 120px);
+    grid-template-rows: repeat(6, 102px);
     grid-gap: 10px;
-    width: 1070px;
+    width: 975px;
     padding: 10px;
     margin: 30px auto 0 auto;
     grid-auto-flow: dense;
+
     p {
       font-size: 18pt;
       font-weight: bold;
@@ -1881,9 +1970,9 @@ input {
   .grid-layout-merch {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 160px);
+    grid-template-rows: repeat(6, 150px);
     grid-gap: 10px;
-    width: 1070px;
+    width: 975px;
     padding: 10px;
     margin: 30px auto 0 auto;
     grid-auto-flow: dense;
